@@ -1,0 +1,1240 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='//fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,100italic,300italic,400' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <link type="text/css" href="css/player.css?v=1279" rel="stylesheet" />
+    <link type="text/css" href="css/prism.css?v=1279" rel="stylesheet" />
+    <script src="js/TweenMax.js?v=1279"></script>
+    <script src="js/playerlibs.js?v=1279"></script>
+    <script src="js/amcharts-lib.js?v=1279"></script>
+    <script src="js/player.js?v=1279"></script>
+    <script src="js/d3.js?v=1279"></script>
+    <script src="js/prism.js?v=1279"></script>
+    <script src="js/maplibs.js?v=1279"></script>
+    
+    <title>UFCW Endorsements Map - Created with VisMe</title>
+    <script>!window.jQuery && document.write('<script src="js/jquery.js"><\/script>')</script>
+  </head>
+  <body style="        background:rgb(204, 204, 204)            ">
+    <!-- "display: none" ensures the SVG doesn't take up space even though it's not being shown because of the use of symbol -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+  <symbol id="s-right" viewBox="0 0 24 24">
+    <path opacity="0.3" d="M12,3.2c4.8,0,8.8,3.9,8.8,8.8s-3.9,8.8-8.8,8.8s-8.8-4-8.8-8.8S7.2,3.2,12,3.2"/>
+    <path fill="#FFF" d="M12 3.2c4.8 0 8.8 3.9 8.8 8.8s-3.9 8.8-8.8 8.8-8.8-4-8.8-8.8 4-8.8 8.8-8.8m0-1.5C6.3 1.7 1.7 6.3 1.7 12S6.3 22.3 12 22.3 22.3 17.7 22.3 12 17.7 1.7 12 1.7z"/><path fill="#FFF" d="M6.2 11.2h9.7l-4.7-4.6 1.1-1.1 6.5 6.5-6.5 6.5-1.1-1.1 4.7-4.6H6.2"/>
+  </symbol>
+
+  <symbol id="s-left" viewBox="0 0 24 24">
+    <path opacity="0.3" d="M12,3.2c4.8,0,8.8,3.9,8.8,8.8s-3.9,8.8-8.8,8.8s-8.8-4-8.8-8.8S7.2,3.2,12,3.2"/>
+    <path fill="#FFF" d="M12 3.2c4.8 0 8.8 3.9 8.8 8.8s-3.9 8.8-8.8 8.8-8.8-4-8.8-8.8 4-8.8 8.8-8.8m0-1.5C6.3 1.7 1.7 6.3 1.7 12S6.3 22.3 12 22.3 22.3 17.7 22.3 12 17.7 1.7 12 1.7z"/><path fill="#FFF" d="M17.8 11.2H8.1l4.7-4.6-1.1-1.1L5.2 12l6.5 6.5 1.1-1.1-4.7-4.6h9.7"/>
+  </symbol>
+
+  <symbol id="unmute" viewBox="0 0 20 20">
+    <path fill="#CBCBCD" d="M11.3 2.1c-.3 0-.4.1-.7.3L5.3 5.7H1.1c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7v6c0 .3.1.5.3.7.2.2.4.3.7.3h4.2l5.3 3.3c.2.2.4.2.7.3.3 0 .5-.1.7-.3.2-.2.3-.4.3-.7V3c0-.3-.1-.5-.3-.7-.2-.1-.5-.2-.7-.2zM16.3 11.5c.3-.6.5-1.2.5-1.9s-.2-1.3-.5-1.9C16 7 15.5 6.6 15 6.4c-.1 0-.2-.1-.3-.1-.2 0-.4.1-.5.3-.2.2-.2.4-.2.6 0 .2 0 .4.1.5l.3.3c.1.1.3.2.4.3.1.1.3.3.3.5.1.2.1.5.1.8 0 .3 0 .6-.1.8-.1.2-.2.4-.3.5-.1.1-.3.2-.4.3-.1.1-.3.2-.3.3-.1.1-.1.3-.1.5s.1.4.2.6c.2.2.3.3.5.3.1 0 .2 0 .3-.1.5-.3 1-.7 1.3-1.3z"/><path fill="#CBCBCD" d="M16.2 3.2c-.1 0-.2-.1-.3-.1-.2 0-.4.1-.5.3-.2.2-.2.4-.2.6 0 .4.2.6.5.8.3.2.6.4.8.6.6.5 1.1 1.1 1.4 1.8.3.7.5 1.5.5 2.3 0 .8-.2 1.6-.5 2.3-.3.7-.8 1.3-1.4 1.8-.2.1-.5.3-.9.6-.3.2-.5.4-.5.8 0 .2.1.4.2.6.2.2.3.3.6.3.1 0 .2 0 .3-.1 1.1-.5 2-1.4 2.7-2.6.7-1.2 1-2.4 1-3.8s-.3-2.7-1-3.8c-.7-1-1.6-1.9-2.7-2.4z"/>
+  </symbol>
+
+  <symbol id="play-btn" viewBox="0 0 24 24">
+    <path opacity="0.3" d="M12,3.2c4.8,0,8.8,3.9,8.8,8.8s-3.9,8.8-8.8,8.8s-8.8-4-8.8-8.8S7.2,3.2,12,3.2"/>
+    <path fill="#FFF" d="M12 3.2c4.8 0 8.8 3.9 8.8 8.8s-3.9 8.8-8.8 8.8-8.8-4-8.8-8.8 4-8.8 8.8-8.8m0-1.5C6.3 1.7 1.7 6.3 1.7 12S6.3 22.3 12 22.3 22.3 17.7 22.3 12 17.7 1.7 12 1.7z"/><path fill="#FFF" d="M10 9.2l4.9 2.8-4.9 2.8V9.2M8.5 6.6v10.8l9.4-5.4-9.4-5.4z"/>
+  </symbol>
+<symbol id="logo-small" viewBox="0 0 118 27">
+  <g fill="#FFF"><path d="M57.3 7.1l-4.8 12.6c-.1.4-.4.6-.8.6h-2.1c-.4 0-.7-.2-.8-.6L44 7.1h2.5l3.2 9.2c.2.5.4 1.3.8 2.3h.4l.8-2.3 3.2-9.2h2.4zM62.3 20.2H60V7.1h2.3v13.1zM72.6 14.9l-3.8-.9c-1.1-.3-1.8-.7-2.3-1.2-.5-.6-.7-1.4-.7-2.5 0-1.5.4-2.3 1.2-2.8.8-.5 2.1-.5 4-.5h5.5v1.7h-5.2c-1.3 0-2.2.1-2.6.2-.4.2-.6.6-.6 1.4 0 .6.1 1.1.4 1.3s.8.4 1.5.6l3.8.9c1.1.3 1.9.7 2.3 1.2.5.5.7 1.3.7 2.4 0 1.5-.4 2.3-1.2 2.8-.8.5-2 .7-4.4.7h-5v-1.8h4.5c1.5 0 2.6-.1 3.1-.4.5-.2.8-.6.8-1.4 0-.6-.2-1-.5-1.2-.2-.1-.8-.3-1.5-.5zM82.6 7.1v1.8c1.8-1.4 3.5-2.2 5.1-2.2 1.8 0 2.9.8 3.3 2.3 1.8-1.5 3.5-2.3 5.3-2.3 1.1 0 2 .3 2.6.9s.9 1.5.9 2.7v9.9h-2.3V11c0-.8-.2-1.4-.5-1.8-.3-.4-.8-.6-1.6-.6-.6 0-1.2.1-1.8.4-.6.3-1.4.8-2.5 1.6v9.5H89V11c0-.8-.2-1.4-.5-1.8-.3-.4-.9-.5-1.6-.5-.6 0-1.2.1-1.8.4-.6.3-1.4.8-2.5 1.6v9.5h-2.3V7.1h2.3zM111.9 14.8h-6.1c.1 1.5.5 2.5 1.1 3s1.6.6 3.1.6h4.6v1.8h-4.9s-3.9-.2-4.8-1.3c-1-1.1-1.4-2.8-1.4-5.4 0-2.5.5-4.3 1.4-5.3s2.5-1.5 4.6-1.5c2 0 3.4.4 4.3 1.1s1.3 1.8 1.3 3.2c-.1 2.5-1.1 3.8-3.2 3.8zm-6.2-1.8h5.6c1 0 1.4-.6 1.4-1.9 0-.8-.3-1.4-.8-1.8-.5-.4-1.3-.5-2.5-.5-1.4 0-2.3.3-2.9.9-.5.5-.7 1.6-.8 3.3z"/></g><path fill="#F05E4E" d="M32.9 17.2l5.6-2.9c-1.7-1.1-10.4-5.3-13.8-1.7l-.7.7c3.6.6 6.7 2 8.9 3.9z"/><path fill="#B23232" d="M30.2 15.4l4.8-2.7c-4.4-1.8-6.8-1.3-9.7.5-.2.1-.3.2-.5.3 2.1.4 3.9 1 5.4 1.9z"/><path fill="#6CC294" d="M19.7 13.2c3.5-.2 6.8.5 9.5 1.7 0 0 1.6-1.3 4-2.9s3.9-2.8 3.9-2.8c-1.2-.9-4.3-1.6-6.1-1.9-5.6-.8-10.2 2-12 6 .2-.1.5-.1.7-.1z"/><path fill="#4B9F71" d="M19.7 13.2c2.7-.1 5.3.2 7.5.9l2.2-7c-5.4-.2-10.1 2.5-11.6 6.1v.1c.6 0 1.2-.1 1.9-.1z"/><path fill="#F3DE3C" d="M19.7 13.2c2.1-.1 4.2.1 6.1.5l3.1-11.4c-2.4-.2-5 .1-7.6.8-7 2.1-11.2 7.3-10 12.2 2.4-1.2 5.3-2 8.4-2.1z"/><path fill="#CDAF31" d="M19.7 13.2h2.7l-3.8-9c-5.3 2.5-8.3 7-7.3 11.2 2.4-1.3 5.3-2.1 8.4-2.2z"/><path fill="#19ABD6" d="M19.7 13.2h1.1c-.3-.7-1.2-2.9-2.7-5.4-1.8-3.1-2.9-5.1-2.9-5.1-2.7 1-5.9 2.7-7.8 4.6-4.1 4.1-4.5 9.2-1.5 12.9 2.3-3.9 7.6-6.7 13.8-7z"/><path fill="#FFF" d="M24.2 18.4l-3.5 2.4 1.2-3.7c-.3-.1-.7-.1-1.2-.1-2.5 0-4.5 1.7-4.5 3.9 0 2.1 2 3.9 4.5 3.9s4.5-1.7 4.5-3.9c0-1-.4-1.8-1-2.5z"/>
+  </symbol>
+
+  <symbol id="logo" viewBox="0 0 78.4 47">
+    <path fill="#19ABD6" d="M37.1,14.4L37.1,14.4c-0.6-0.3-1.2-0.5-1.8-0.7c-0.1,0-0.3-0.1-0.4-0.1l0.1-0.1c2.7-1.8,4.4-3.1,4.4-3.1
+    	c-1.4-1-4.8-1.8-6.9-2.1c-0.9-0.1-1.8-0.2-2.6-0.1c-0.4,0-0.8,0-1.2,0.1l1.5-5.4c-2.7-0.2-5.6,0.1-8.4,0.9c-1.1,0.3-2.1,0.7-3,1.2
+    	l0,0c-0.3,0-0.5,0.1-0.8,0.3c-0.1,0-0.2,0.1-0.3,0.1C17.3,5.6,17,5.8,16.6,6l0,0c-1-1.8-1.7-2.9-1.7-2.9c-3,1.1-6.6,3-8.7,5.1
+    	c-4.6,4.6-5,10.2-1.7,14.4c1.3-2.1,3.5-4,6.1-5.4l0,0c0,0,0.1,0,0.2-0.1c2.1-1,4.4-1.8,7-2.1c0.7-0.1,1.4-0.2,2.1-0.2
+    	c0.6,0,1.3,0,1.9,0c0.5,0,1,0,1.5,0.1c0.1,0,0.1,0,0.2,0c1.1,0.1,2.2,0.3,3.2,0.5l0,0h0.1c0.4,0.1,0.7,0.2,1.1,0.3
+    	c0.2,0.1,0.4,0.1,0.6,0.2c0.1,0,0.2,0.1,0.2,0.1c0.1,0,0.2,0.1,0.3,0.1c0.4,0.1,0.8,0.3,1.2,0.5c0,0,0.1,0,0.1,0.1
+    	c0.1,0,0.2,0.1,0.3,0.1c0.3,0.2,0.7,0.3,1,0.5c1.1,0.6,2.2,1.3,3,2.1l0,0l6.2-3.2C40.3,15.9,38.9,15.1,37.1,14.4z"/>
+    <path fill="#F05E4E" d="M34.7,19.5L34.7,19.5l6.3-3.2c-1.9-1.2-11.6-5.9-15.4-1.9c-0.3,0.3-0.5,0.5-0.8,0.8
+    	C28.8,15.7,32.3,17.3,34.7,19.5z"/>
+    <path fill="#B23232" d="M31.7,17.4l5.4-3c-4.9-2-7.6-1.4-10.8,0.5c-0.2,0.1-0.4,0.2-0.6,0.4C28,15.7,30,16.5,31.7,17.4z"/>
+    <path fill="#6CC294" d="M20,14.9c3.9-0.2,7.6,0.5,10.6,1.9l0,0c0,0,1.8-1.4,4.5-3.3c2.7-1.8,4.4-3.1,4.4-3.1c-1.4-1-4.8-1.8-6.9-2.1
+    	c-6.3-0.9-11.4,2.2-13.4,6.7C19.4,15,19.7,15,20,14.9z"/>
+    <path fill="#4B9F71" d="M20,14.9c3-0.2,5.9,0.2,8.4,1l2.5-7.8c-6-0.2-11.2,2.8-13,6.9v0.1C18.5,15.1,19.2,15,20,14.9z"/>
+    <path fill="#F3DE3C" d="M20,14.9c2.4-0.1,4.7,0.1,6.8,0.6l3.5-12.7c-2.7-0.2-5.6,0.1-8.4,0.9C14,6.1,9.4,11.9,10.7,17.3
+    	C13.3,16,16.5,15.1,20,14.9z"/>
+    <path fill="#CDAF31" d="M20,14.9c1-0.1,2.1,0,3.1,0l-4.3-10c-6,2.8-9.2,7.8-8.1,12.5C13.3,16,16.5,15.1,20,14.9z"/>
+    <path fill="#19ABD6" d="M20,14.9c0.4,0,0.8,0,1.2,0c-0.3-0.8-1.3-3.2-3-6c-2-3.5-3.3-5.7-3.3-5.7c-3,1.1-6.6,3-8.7,5.1
+    	c-4.6,4.6-5,10.2-1.7,14.4C7.2,18.5,13,15.3,20,14.9z"/>
+    <path fill="#FFFFFF" d="M17.2,30.8l-4.9,12.8c-0.1,0.4-0.4,0.6-0.8,0.6H9.3c-0.4,0-0.7-0.2-0.8-0.6L3.6,30.8h2.5l3.3,9.4
+    	c0.2,0.5,0.5,1.3,0.8,2.3h0.4l0.8-2.3l3.3-9.4C14.7,30.8,17.2,30.8,17.2,30.8z"/>
+    <path fill="#FFFFFF" d="M22.3,44.2H20V30.8h2.3V44.2z"/>
+    <path fill="#FFFFFF" d="M32.8,38.8l-3.9-0.9c-1.1-0.3-1.9-0.7-2.3-1.2c-0.5-0.6-0.7-1.4-0.7-2.5c0-1.5,0.4-2.4,1.2-2.9
+    	c0.8-0.5,2.1-0.5,4.1-0.5c2.3,0,5.6,0,5.6,0v1.7c0,0-4.7,0-5.3,0c-1.4,0-2.3,0.1-2.7,0.2c-0.4,0.2-0.6,0.6-0.6,1.4
+    	c0,0.6,0.1,1.1,0.4,1.3s0.8,0.4,1.5,0.6l3.9,0.9c1.1,0.3,1.9,0.7,2.4,1.2s0.7,1.4,0.7,2.5c0,1.6-0.4,2.4-1.3,2.9
+    	c-0.9,0.5-2,0.7-4.5,0.7c-1.9,0-5.1,0-5.1,0v-1.8c0,0,3.1,0,4.6,0c1.6,0,2.6-0.1,3.1-0.4c0.5-0.2,0.8-0.6,0.8-1.4
+    	c0-0.6-0.2-1-0.5-1.3C34.1,39.2,33.6,39,32.8,38.8z"/>
+    <path fill="#FFFFFF" d="M43,30.8v1.9c1.8-1.5,3.5-2.2,5.2-2.2c1.9,0,3,0.8,3.4,2.4c1.8-1.6,3.6-2.4,5.4-2.4c1.2,0,2,0.3,2.7,0.9
+    	c0.6,0.6,0.9,1.5,0.9,2.8v10.1h-2.3v-9.4c0-0.8-0.2-1.4-0.5-1.8c-0.3-0.4-0.9-0.6-1.6-0.6c-0.6,0-1.3,0.1-1.9,0.4
+    	c-0.6,0.3-1.4,0.8-2.5,1.7v9.7h-2.3v-9.4c0-0.8-0.2-1.5-0.5-1.8c-0.3-0.4-0.9-0.6-1.6-0.6c-0.6,0-1.3,0.1-1.9,0.4
+    	c-0.6,0.3-1.4,0.8-2.6,1.6v9.7h-2.3V30.8H43z"/>
+    <path fill="#FFFFFF" d="M72.9,38.7h-6.3c0.1,1.5,0.5,2.6,1.1,3.1s1.7,0.7,3.1,0.7c1.5,0,4.7,0,4.7,0v1.8c0,0-2.7,0-5,0
+    	s-4-0.2-4.9-1.3c-1-1.1-1.5-2.9-1.5-5.5s0.5-4.4,1.4-5.4c1-1,2.5-1.6,4.7-1.6c2,0,3.5,0.4,4.4,1.1s1.4,1.8,1.4,3.3
+    	C76.1,37.4,75.1,38.7,72.9,38.7z M66.6,36.9h5.7c1,0,1.5-0.7,1.5-2c0-0.9-0.3-1.5-0.8-1.8c-0.5-0.4-1.3-0.6-2.5-0.6
+    	c-1.4,0-2.4,0.3-2.9,0.9C66.9,34,66.6,35.2,66.6,36.9z"/>
+    <path fill="#FFFFFF" d="M25,20.8l-3.9,2.7l1.4-4.1c-0.4-0.1-0.9-0.2-1.4-0.2c-2.8,0-5,1.9-5,4.3s2.2,4.3,5,4.3s5-1.9,5-4.3
+    	C26.1,22.5,25.7,21.6,25,20.8z"/>    </symbol>
+
+  <symbol id="t-left" viewBox="0 0 17 32">
+    <path fill="#FFF" d="M15.9 28.6L5 16 15.9 3.4l-2.2-2L1.1 16l12.6 14.6"/>
+  </symbol>
+
+  <symbol id="t-right" viewBox="0 0 17 32">
+    <path fill="#FFF" d="M1.1 28.6L12 16 1.1 3.4l2.2-2L15.9 16 3.3 30.6"/>
+  </symbol>
+
+  <symbol id="fullscreen" viewBox="0 0 18 17">
+    <rect id="Rectangle" x="4" y="5" style="fill:#FFFFFF;" width="10" height="7"/>
+    <path id="Top_Left" style="fill:#FFFFFF;" d="M4,4V3H3v1H4z M4,1.2V0H0v4h1.2V2H2V1.2H4z M3,3V2H2v1H3z"/>
+    <path id="Top_Right" style="fill:#FFFFFF;" d="M14,4h1V3h-1V4z M16.8,4H18V0l-4,0v1.2h2V2h0.7V4z M15,3h1V2h-1V3z"/>
+    <path id="Bottom_Right" style="fill:#FFFFFF;" d="M14,13v1h1v-1H14z M14,15.8V17h4v-4h-1.2v2H16v0.8H14z M15,14v1h1v-1H15z"/>
+    <path id="Bottom_Left" style="fill:#FFFFFF;" d="M4,13H3v1h1V13z M1.2,13H0l0,4h4v-1.2H2V15H1.2V13z M3,14H2v1h1V14z"/>
+  </symbol>
+
+  <symbol id="presentationnotes" viewBox="0 0 18 17">
+    <path style="fill:#FFFFFF;" d="M5.6,9.1V2.9l5,3.1L5.6,9.1z M6.6,4.7v2.6L8.7,6L6.6,4.7z"/>
+      <path style="fill:#FFFFFF;" d="M16,1.3V0h-0.7H14H2H0.7H0v1.3h0.7v9.3H0V12h0.7H2h4l-1.7,4h1.5l1.7-4h1l1.6,4h1.4l-1.6-4H14h1.3H16
+	v-1.3h-0.7V1.3H16z M14,10.7H2V1.3h12V10.7z"/>
+  </symbol>
+</svg>
+
+    
+    <div id="wrapper">
+                  
+      
+      <div id="content">
+        <canvas></canvas>
+
+        
+        
+      </div>
+
+              <div class="bottom-controls">
+  <div id="controls-container">
+        <div id="thumbnails">
+    <div id="thumb-left" class="thumbs-arrows">
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#t-left"></use>
+      </svg>
+    </div>
+    <div id="thumb-right" class="thumbs-arrows">
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#t-right"></use>
+      </svg>
+    </div>
+    <div id="slide-container">
+      <div id="slide-panel"></div>
+    </div>
+    </div>
+  <div class="timeline-container">
+    <div id="time-viewed" style="width: 30%;"></div>
+    <div id="timeline"><!-- --></div>
+  </div>
+    
+  
+  <footer id ="controls-footer">
+    <div id="controls">
+            <div id="play" class="slide-nav">
+          <a class="">
+          <svg viewBox="0 0 24 24">
+            <use xlink:href="#play-btn"></use>
+          </svg>
+          </a>
+        </div>
+      
+              <div id="sound" class="slide-nav">
+          <a class="">
+          <svg viewBox="0 0 24 24">
+            <use xlink:href="#unmute"></use>
+          </svg>
+          </a>
+        </div>
+        
+            <div id="slide-controls">
+        <div id="prev-slide" class="slide-nav">
+          <a>
+          <svg viewBox="0 0 24 24">
+            <use xlink:href="#s-left"></use>
+          </svg>
+          </a>
+        </div>
+
+        <div id="slides-counter">Slide <span>1</span> of <span>1</span></div>
+        <div id="next-slide" class="slide-nav">
+          <a>
+          <svg viewBox="0 0 24 24">
+            <use xlink:href="#s-right"></use>
+          </svg>
+          </a>
+        </div>
+      </div>
+      
+      
+        <a  id="fullscreen" class="slide-nav">
+            <svg viewBox="0 0 18 17">
+                <use xlink:href="#fullscreen"></use>
+            </svg>
+        </a>
+
+        
+        <a id="btn-presentation-notes" class="slide-nav">
+          <svg viewBox="0 0 18 17">
+            <use xlink:href="#presentationnotes"></use>
+          </svg>
+        </a>
+
+              
+                <a  id="logosmall" href="javascript:void(0);">
+          <svg viewBox="0 0 24 24">
+            <use xlink:href="#logo-small"></use>
+          </svg>
+        </a>
+      
+    </div>
+  </footer>
+    
+  </div>
+</div>
+          </div>
+
+    
+          <div id="profile" class="ui-standard-el" style="background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZThlOGU4Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');">
+  <div id="profile-content">
+    <div class="avatar">
+
+
+<img src="https://www.gravatar.com/avatar/006499990e60e6f31924b936d1bb34c3?d=https%3A%2F%2Fmy.visme.co%2Fimages%2Fplayer%2Fava2.png&s=70" style ="
+border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+" />
+
+    </div>
+    <div class="p_profile">
+      <div class="p_profile_wrap">
+        <h1 class="pname">UFCW Endorsements Map</h1>
+                <h2 class="publ_h2">Sibyl Edwards | April 25, 2018</h2>
+        </div>
+    </div>
+</div>
+    
+
+    <script type="text/template" id="slide-template">
+      <section class="stage" id="<%= id %>" style="width: <%= width %>px; height:<%= height %>px;display: none; visibility: inherit; opacity: 0;">
+  <article style="width: <%= width %>px; height: <%= height %>px; position:absolute;"></article>
+  </section>
+    </script>
+    <script type="text/template" id="slide-panel-template">
+  <div class="slide-zone">
+    <div class="slide" id="thumb-<%= id %>">
+      <div class="slide_mask" ></div>
+      <div class="section_wrap">
+        <section id="small-<%= id %>"></section>
+      </div>
+      <div class="slide_num">
+        <%= (order + 1) %>
+      </div>
+    </div>
+  </div>
+</script>
+
+  </div>
+    
+
+
+<script type='text/template' id='object'>
+<div class='el <% if (!_.isUndefined(object.link) && object.link) { %>linked<% } %>' id='<%= object.id %>'  data-type ='<%= object.type %>' style='
+    width:<%= object.width %>px;
+    height:<%= object.height %>px;
+    z-index:<%= object.order %>;
+    -ms-transform: translate(<%= object.x %>px, <%= object.y %>px) rotate(<%= object.rotation %>deg);
+    -webkit-transform: translate(<%= object.x %>px, <%= object.y %>px) rotate(<%= object.rotation %>deg);
+    transform: translate(<%= object.x %>px, <%= object.y %>px) rotate(<%= object.rotation %>deg);
+
+    <% if (object.backgroundColor) { %>
+      background: <%= object.backgroundColor %>;
+    <% } %>
+
+    <% if (!_.isUndefined(object.opacity)) { %>
+      opacity: <%= object.opacity / 100 %>;
+    <% } %>
+
+    <% if (object.borderStyle && object.borderStyle != "none") { %>
+      border: <%= object.borderStyle %>  <%= object.borderWidth %>px <% if (object.borderColor && object.borderColor != "none") { %><%= object.borderColor %><% } else { %>#000 <% } %>;
+    <% } %>
+
+    <% if (object.borderRadius && object.borderRadius !=0) { %>
+      border-radius: <%= object.borderRadius %>px;
+    <% } %>
+    
+     display: none
+      '
+>
+  <%= template(object) %>
+<div class='drag-helper' style='width:<%= object.width %>px;height:<%= object.height %>px;
+    <% if (object.borderStyle && object.borderStyle != "none" && object.borderWidth) { %>
+      margin-left: -<%= object.borderWidth %>px;
+      margin-top: -<%= object.borderWidth %>px;
+    <% } %>'>
+<div class='drag-inner' style='width:<%= object.width %>px;height:<%= object.height %>px;'><!-- --></div>
+</div>
+<% if (app.settings.get('project_type') == 'Download' && object.link && object.link.type == 'hyperlink' ) { %><a href="<%= object.link.target %>" target="_blank"
+style="
+    width:<%= object.width %>px;
+    height:<%= object.height %>px;
+    z-index:<%= object.order %>;
+    top: 0px;
+    left: 0px;
+    display:block;
+    float:left;
+    overflow: hidden;
+    position: absolute;
+"><!-- --></a><% } %>
+</div>
+<% if (app.settings.get('project_type') == 'Download' && object.link && object.link.type == 'hyperlink' ) { %><% } %>
+</script>
+
+
+
+<script type='text/template' id='backgroundWrapper'><div class="slide-background" id="<%= object.id %>"><%= template(object) %></div></script>
+<script type='text/template' id='background'><div class="background-wrapper" <% if (bgtype != 'image') { %>style="background:<%= colors[0] %>;<%= backgrounds %>"<% } %>>
+  <div class="crop_wrapper" <% if (bgtype != 'image') { %>style="display:none"<% } else { %>style='transform: translate3d(<%= x %>px, <%= y %>px, 0px);'<% } %>>
+    <svg class="clip-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" x="0" y="0" width="100%" height="100%"
+    style="width:<%= width * ( scale / 100 ) %>px;height:<%= height * ( scale / 100 ) %>px;<% if(flipX || flipY) { %>transform:scale(<%= flipX ? -1: 1 %>, <%= flipY ? -1: 1 %>)<% } %>"
+    >
+    <defs>
+      <filter id="filter-<%= id %>">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="0" color-interpolation-filters="sRGB"/>
+        <feComponentTransfer id="brightness" color-interpolation-filters="sRGB">
+          <feFuncR type="linear" slope="0"/>
+          <feFuncG type="linear" slope="0"/>
+          <feFuncB type="linear" slope="0"/>
+        </feComponentTransfer>
+        <feComponentTransfer id="contrast" color-interpolation-filters="sRGB">
+          <feFuncR type="linear" slope="0"/>
+          <feFuncG type="linear" slope="0"/>
+          <feFuncB type="linear" slope="0"/>
+        </feComponentTransfer>
+        <feColorMatrix id="hue" type="hueRotate" values="0" color-interpolation-filters="sRGB"/>
+      </filter>
+    </defs>
+    <defs>
+      <filter id="filter2-<%= id %>">
+        <feColorMatrix id="saturate" result="feColorMatrix" in="SourceGraphic" type="saturate" values="1" color-interpolation-filters="sRGB"/>
+        <feFlood id="imageColorOverlay" result="floodFill" x="0" y="0" width="100%" height="100%" flood-color="green" flood-opacity="1" color-interpolation-filters="sRGB"/>
+        <feBlend in2="feColorMatrix" in="floodFill" mode="normal" color-interpolation-filters="sRGB"/>
+      </filter>
+    </defs>
+    <defs>
+      <linearGradient id="alphaLinear-<%= id %>" x1="0%" y1="100%" x2="0%" y2="0%">
+        <stop offset="0%" stop-color="#FFFFF" stop-opacity="0%" />
+        <stop offset="40%" stop-color="#FFFFF" stop-opacity="20%" />
+        <stop offset="100%" stop-color="#999999" stop-opacity="100%" />
+      </linearGradient>
+
+      <mask id="mask-ref-<%= id %>">
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#alphaLinear-<%= id %>)"  />
+      </mask>
+    </defs>
+
+
+        <g class="imageObj" clip-path="url(#path-none)">
+          <image height="<%= height * ( scale / 100 ) %>px" width="<%= width * ( scale / 100 ) %>px" xlink:href="<%= usersDataStorage %><%= src %>" preserveAspectRatio="none" style="opacity:<%= opacity / 100 %>"/>
+          <rect id="imageColorOverlay" fill="transparent" width="100%" height="100%" />
+        </g>
+
+    </svg>
+
+
+  </div>
+  
+<div class="qLoverlay loader_code" style="" >
+    <div class='loader'  style="">
+        <div class="loader_wrap" style="">
+            <div class="container">
+                <div class="ring1">
+                    <div class="ring2">
+                        <div class="ring3"></div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="c_awesome">LOADING AWESOME</div>
+        </div>
+    </div>
+</div>
+</div>
+</script>
+
+<script type='text/template' id='image'><div class="crop_wrapper">
+  <svg class="clip-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" x="0" y="0" width="100%" height="100%">
+      <defs>
+        <filter id="filter-<%= id %>">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="0" color-interpolation-filters="sRGB"/>
+          <feComponentTransfer id="brightness" color-interpolation-filters="sRGB">
+            <feFuncR type="linear" slope="0"/>
+            <feFuncG type="linear" slope="0"/>
+            <feFuncB type="linear" slope="0"/>
+          </feComponentTransfer>
+          <feComponentTransfer id="contrast" color-interpolation-filters="sRGB">
+            <feFuncR type="linear" slope="0"/>
+            <feFuncG type="linear" slope="0"/>
+            <feFuncB type="linear" slope="0"/>
+          </feComponentTransfer>
+          <feColorMatrix id="hue" type="hueRotate" values="0" color-interpolation-filters="sRGB"/>
+        </filter>
+      </defs>
+      <defs>
+        <filter id="filter2-<%= id %>">
+          <feColorMatrix id="saturate" result="feColorMatrix" in="SourceGraphic" type="saturate" values="1" color-interpolation-filters="sRGB"/>
+          <feFlood id="imageColorOverlay" result="floodFill" x="0" y="0" width="100%" height="100%" flood-color="green" flood-opacity="1" color-interpolation-filters="sRGB"/>
+          <feBlend in2="feColorMatrix" in="floodFill" mode="normal" color-interpolation-filters="sRGB"/>
+        </filter>
+      </defs>
+      <defs>
+        <linearGradient id="alphaLinear-<%= id %>" x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#FFFFF" stop-opacity="0%" />
+          <stop offset="40%" stop-color="#FFFFF" stop-opacity="20%" />
+          <stop offset="100%" stop-color="#999999" stop-opacity="100%" />
+        </linearGradient>
+
+        <mask id="mask-ref-<%= id %>">
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#alphaLinear-<%= id %>)"  />
+        </mask>
+      </defs>
+      <defs>
+        <clipPath id="path-<%= id %>-circle">
+          <ellipse cx="50" cy="50" rx="50" ry="50"/>
+        </clipPath>
+      </defs>
+      <defs>
+        <clipPath id="path-<%= id %>-rectangle">
+          <rect x="0" y="0" rx="0" ry="0" width="100" height="100"/>
+        </clipPath>
+      </defs>
+      <defs>
+        <clipPath id="path-<%= id %>-none">
+          <rect x="0" y="0" rx="0" ry="0" width="100" height="100"/>
+        </clipPath>
+      </defs>
+      <defs>
+        <clipPath id="path-<%= id %>-rectangle1">
+          <rect x="0" y="0" rx="10" ry="10" width="100" height="100"/>
+        </clipPath>
+      </defs>
+      <defs>
+        <clipPath id="path-<%= id %>-rectangle2">
+          <path d="M1,0.06A0.06,0.06,0,0,1,.94,0H0.06A0.06,0.06,0,0,1,0,.06V0.94A0.06,0.06,0,0,1,.06,1H0.94A0.06,0.06,0,0,1,1,.94V0.06Z"/>
+        </clipPath>
+      </defs>
+      <defs>
+        <clipPath id="path-<%= id %>-triangle">
+          <path d="M 0 100 L 50 0 L 100 100 L 0 100"/>
+        </clipPath>
+      </defs>
+      <defs>
+        <clipPath id="path-<%= id %>-triangle-r">
+          <path d="M 0 0 L 50 100 L 100 0 L 0 0" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape1">
+          <path d="M0.972,0.536c0-0.007,0.001-0.013,0.001-0.02l0.013-0.056l0.014-0.059l-0.037-0.048l-0.03-0.039c-0.003-0.006-0.006-0.013-0.009-0.019L0.909,0.24
+    l-0.015-0.058l-0.055-0.025l-0.04-0.018l-0.032-0.04l-0.038-0.047l-0.061,0l-0.05,0c-0.007-0.002-0.014-0.003-0.021-0.005l-0.052-0.022L0.489,0l-0.054,0.028l-0.044,0.023
+    c-0.007,0.002-0.014,0.004-0.021,0.006l-0.057,0.005l-0.06,0.005l-0.034,0.05l-0.028,0.041c-0.005,0.005-0.01,0.009-0.015,0.014l-0.048,0.031l-0.051,0.033l-0.007,0.06l-0.005,0.049
+    c-0.003,0.007-0.005,0.014-0.007,0.021L0.03,0.414l-0.03,0.053l0.022,0.056l0.018,0.046c0.001,0.007,0.002,0.014,0.003,0.021l-0.001,0.057l-0.001,0.06l0.046,0.039l0.038,0.032
+    c0.004,0.006,0.008,0.011,0.013,0.016l0.026,0.051l0.027,0.054l0.059,0.013l0.048,0.01c0.007,0.003,0.013,0.006,0.02,0.009l0.046,0.033l0.049,0.035l0.058-0.016l0.048-0.014
+    c0.007,0,0.014-0.001,0.02-0.001l0.057,0.007l0.06,0.008l0.044-0.042l0.036-0.034c0.006-0.003,0.012-0.007,0.018-0.011l0.054-0.02l0.057-0.021l0.019-0.057l0.016-0.047
+    c0.004-0.006,0.007-0.012,0.011-0.018L0.95,0.69l0.04-0.045l-0.01-0.06L0.972,0.536z" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape2" >
+          <path d="m0.957,0.594c0,-0.001 0,-0.002 0.001,-0.003l0.014,-0.015l0.028,-0.031l-0.024,-0.035l-0.009,-0.013c0,-0.001 0,-0.002 0,-0.003l0.011,-0.018l0.021,-0.036l-0.031,-0.028l-0.012,-0.011c0,-0.001 0,-0.002 -0.001,-0.003l0.007,-0.02l0.013,-0.04l-0.036,-0.022l-0.014,-0.008c0,-0.001 -0.001,-0.002 -0.001,-0.003l0.002,-0.021l0.004,-0.041l-0.04,-0.014l-0.015,-0.005c-0.001,-0.001 -0.001,-0.002 -0.002,-0.002l-0.002,-0.021l-0.003,-0.041l-0.042,-0.005l-0.016,-0.002c-0.001,-0.001 -0.001,-0.001 -0.002,-0.002l-0.007,-0.02l-0.013,-0.04l-0.042,0.004l-0.016,0.001c-0.001,0 -0.002,-0.001 -0.003,-0.001l-0.01,-0.018l-0.02,-0.037l-0.04,0.012l-0.015,0.005c-0.001,0 -0.002,-0.001 -0.003,-0.001l-0.014,-0.016l-0.028,-0.031l-0.037,0.02l-0.014,0.008c-0.001,0 -0.002,0 -0.003,0l-0.017,-0.012l-0.034,-0.025l-0.032,0.027l-0.012,0.011c-0.001,0 -0.002,0 -0.003,0l-0.019,-0.008l-0.03008,-0.017l-0.025,0.033l-0.01,0.013c-0.001,0 -0.002,0.001 -0.003,0.001l-0.02,-0.005l-0.041,-0.009l-0.018,0.038l-0.007,0.015c-0.001,0.001 -0.002,0.001 -0.003,0.001l-0.021,0l-0.042,0l-0.009,0.041l-0.004,0.016c-0.001,0.001 -0.001,0.001 -0.002,0.002l-0.021,0.004l-0.041,0.009l-0.001,0.042l0,0.016c0,0 0,0.001 -0.001,0.001l-0.019,0.009l-0.038,0.017l0.008,0.041l0.003,0.016c0,0.001 -0.001,0.002 -0.001,0.003l-0.017,0.012l-0.035,0.024l0.016,0.038l0.006,0.015c0,0.001 0,0.002 -0.001,0.003l-0.014,0.015l-0.027,0.031l0.024,0.035l0.009,0.013c0,0.001 0,0.002 0,0.003l-0.011,0.018l-0.02,0.036l0.031,0.028l0.012,0.011c0,0.001 0,0.002 0.001,0.003l-0.007,0.02l-0.013,0.04l0.036,0.022l0.014,0.008c0,0.001 0.001,0.002 0.001,0.003l-0.002,0.021l-0.004,0.041l0.04,0.014l0.015,0.005c0.001,0.001 0.001,0.002 0.002,0.002l0.002,0.021l0.004,0.041l0.042,0.005l0.016,0.002c0.001,0.001 0.001,0.001 0.002,0.002l0.007,0.02l0.013,0.04l0.042,-0.004l0.016,-0.001c0.001,0 0.002,0.001 0.003,0.001l0.01,0.018l0.021,0.036l0.04,-0.012l0.015,-0.005c0.001,0 0.002,0.001 0.003,0.001l0.014,0.015l0.028,0.031l0.037,-0.02l0.014,-0.008c0.001,0 0.002,0 0.003,0l0.017,0.012l0.034,0.025l0.032,-0.027l0.012,-0.011c0.001,0 0.002,0 0.003,0l0.019,0.009l0.038,0.017l0.025,-0.033l0.01,-0.013c0.001,0 0.002,-0.001 0.003,-0.001l0.021,0.004l0.041,0.009l0.018,-0.038l0.007,-0.015c0.001,-0.001 0.002,-0.001 0.003,-0.001l0.021,0l0.042,0l0.009,-0.041l0.004,-0.016c0.001,-0.001 0.001,-0.001 0.002,-0.002l0.021,-0.004l0.041,-0.009l0.001,-0.042l0,-0.016c0.001,-0.001 0.001,-0.001 0.002,-0.002l0.014,-0.006l0.038,-0.017l-0.008,-0.041l-0.003,-0.016c0,-0.001 0.001,-0.002 0.001,-0.003l0.017,-0.012l0.034,-0.024l-0.016,-0.038l-0.006,-0.015z" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-pentagon">
+          <polygon points="0.5 0, 1 0.4, 0.8 1, 0.2 1, 0 0.4" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-hexagon">
+          <polygon points="0.5 0, 1 0.25, 1 0.75, 0.5 1, 0 0.75, 0 0.25" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-heptagon">
+          <polygon points="0.5 0, 0.9 0.2, 1 0.6, 0.75 1, 0.25 1, 0 0.6, 0.1 0.2" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-octagon">
+          <polygon points="0.3 0, 0.7 0, 1 0.3, 1 0.7, 0.7 1, 0.3 1, 0 0.7, 0 0.3" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-rhomboid">
+          <polygon points="0 1, 0.3 0, 1 0, 0.7 1" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-rhombus">
+          <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-kite">
+          <polygon points="0.5 0, 1 0.3, 0.5 1, 0 0.3" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-kite-r">
+          <polygon points="0.5 0, 1 0.7, 0.5 1, 0 0.7" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-trapezoid">
+          <polygon points="0 1, 0.3 0, 0.7 0, 1 1" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-trapezoid-r">
+          <polygon points="0 0, 0.3 1, 0.7 1, 1 0" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape3">
+          <polygon points="0.854,0.646 1,0.5 0.854,0.354 0.854,0.146 0.646,0.146 0.50,0 0.354,0.146 0.146,0.146 0.146,0.354 0,0.50   0.146,0.646 0.146,0.854 0.354,0.854 0.50,1 0.646,0.854 0.854,0.854 " />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape4">
+          <path d="m0.931,0.50c0.056,-0.026 0.083,-0.092 0.062,-0.155c-0.021,-0.063 -0.083,-0.10 -0.144,-0.09c0.029,-0.053 0.011,-0.121 -0.044,-0.16c-0.055,-0.039 -0.129,-0.034 -0.171,0.009c-0.009,-0.058 -0.066,-0.104 -0.134,-0.104s-0.125,0.046 -0.133,0.105c-0.043,-0.043 -0.116,-0.048 -0.171,-0.009c-0.055,0.039 -0.073,0.108 -0.044,0.16c-0.061,-0.01 -0.123,0.027 -0.144,0.09c-0.022,0.062 0.006,0.128 0.061,0.154c-0.056,0.026 -0.083,0.092 -0.062,0.155c0.021,0.063 0.083,0.10 0.144,0.09c-0.029,0.053 -0.011,0.121 0.044,0.16c0.055,0.039 0.129,0.034 0.171,-0.009c0.009,0.058 0.066,0.104 0.134,0.104s0.125,-0.046 0.133,-0.105c0.043,0.043 0.116,0.048 0.171,0.009c0.055,-0.039 0.073,-0.108 0.044,-0.16c0.061,0.01 0.123,-0.027 0.144,-0.09c0.022,-0.062 -0.006,-0.128 -0.061,-0.154z" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape5">
+          <path d="m0.933,0.609l0.06,-0.022l-0.049,-0.041l-0.008,-0.006c0,-0.001 0,-0.002 0,-0.003l0.009,-0.005l0.055,-0.032l-0.055,-0.032l-0.009,-0.005c0,-0.001 0,-0.002 0,-0.003l0.008,-0.006l0.049,-0.041l-0.06,-0.022l-0.009,-0.003c0,-0.001 -0.001,-0.002 -0.001,-0.003l0.006,-0.008l0.041,-0.049l-0.063,-0.011l-0.01,-0.002c0,-0.001 -0.001,-0.002 -0.001,-0.002l0.005,-0.009l0.032,-0.055l-0.064,0l-0.01,0c0,-0.001 -0.001,-0.001 -0.001,-0.002l0.003,-0.009l0.022,-0.06l-0.063,0.012l-0.01,0.002c0,-0.001 -0.001,-0.002 -0.001,-0.002l0.002,-0.01l0.011,-0.063l-0.06,0.022l-0.009,0.003c-0.001,0 -0.001,-0.001 -0.002,-0.001l0,-0.01l0,-0.064l-0.055,0.032l-0.009,0.005c-0.001,0 -0.002,-0.001 -0.002,-0.001l-0.002,-0.01l-0.012,-0.063l-0.049,0.041l-0.008,0.006c-0.001,0 -0.002,-0.001 -0.003,-0.001l-0.003,-0.009l-0.022,-0.06l-0.041,0.049l-0.006,0.008c-0.001,0 -0.002,0 -0.003,0l-0.005,-0.009l-0.031,-0.055l-0.032,0.055l-0.005,0.009c-0.001,0 -0.002,0 -0.003,0l-0.006,-0.008l-0.041,-0.049l-0.022,0.06l-0.003,0.009c-0.001,0 -0.002,0.001 -0.003,0.001l-0.008,-0.006l-0.048,-0.041l-0.011,0.063l-0.002,0.01c-0.001,0 -0.002,0.001 -0.002,0.001l-0.009,-0.005l-0.055,-0.032l0,0.064l0,0.01c-0.001,0 -0.001,0.001 -0.002,0.001l-0.009,-0.003l-0.06,-0.022l0.011,0.063l0.002,0.01c-0.001,0 -0.002,0.001 -0.002,0.001l-0.01,-0.001l-0.063,-0.011l0.022,0.06l0.003,0.009c0,0.001 -0.001,0.001 -0.001,0.002l-0.01,0l-0.064,0l0.032,0.055l0.005,0.009c0,0.001 -0.001,0.002 -0.001,0.002l-0.01,0.002l-0.063,0.011l0.041,0.049l0.006,0.008c0,0.001 -0.001,0.002 -0.001,0.003l-0.009,0.003l-0.06,0.022l0.049,0.041l0.008,0.006c0,0.001 0,0.002 0,0.003l-0.009,0.005l-0.055,0.031l0.055,0.032l0.009,0.005c0,0.001 0,0.002 0,0.003l-0.008,0.006l-0.049,0.041l0.06,0.022l0.009,0.003c0,0.001 0.001,0.002 0.001,0.003l-0.006,0.008l-0.041,0.048l0.063,0.011l0.01,0.002c0,0.001 0.001,0.002 0.001,0.002l-0.005,0.009l-0.032,0.055l0.064,0l0.01,0c0,0.001 0.001,0.001 0.001,0.002l-0.003,0.009l-0.022,0.06l0.063,-0.011l0.01,-0.002c0.001,0.001 0.001,0.001 0.002,0.002l-0.002,0.01l-0.011,0.063l0.06,-0.022l0.009,-0.003c0.001,0 0.001,0.001 0.002,0.001l0,0.01l0,0.064l0.055,-0.032l0.009,-0.005c0.001,0 0.002,0.001 0.002,0.001l0.002,0.01l0.011,0.063l0.049,-0.041l0.008,-0.006c0.001,0 0.002,0.001 0.003,0.001l0.003,0.009l0.022,0.06l0.041,-0.049l0.006,-0.008c0.001,0 0.002,0 0.003,0l0.005,0.009l0.031,0.055l0.032,-0.055l0.005,-0.009c0.001,0 0.002,0 0.003,0l0.006,0.008l0.041,0.049l0.022,-0.06l0.003,-0.009c0.001,0 0.002,-0.001 0.003,-0.001l0.008,0.006l0.049,0.041l0.011,-0.063l0.002,-0.01c0.001,0 0.002,-0.001 0.002,-0.001l0.009,0.005l0.055,0.032l0,-0.064l0,-0.01c0.001,0 0.001,-0.001 0.002,-0.001l0.009,0.003l0.06,0.022l-0.012,-0.063l-0.002,-0.01c0.001,-0.001 0.001,-0.001 0.002,-0.002l0.01,0.002l0.063,0.011l-0.022,-0.06l-0.003,-0.009c0,-0.001 0.001,-0.001 0.001,-0.002l0.01,0l0.064,0l-0.032,-0.055l-0.005,-0.009c0,-0.001 0.001,-0.002 0.001,-0.002l0.01,-0.002l0.063,-0.011l-0.041,-0.049l-0.006,-0.008c0,-0.001 0.001,-0.002 0.001,-0.003l0.009,-0.002z" />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape6">
+          <polygon points="0.962,0.592 1,0.50 0.962,0.408 0.962,0.309 0.892,0.238 0.854,0.146 0.762,0.108 0.691,0.038 0.592,0.038   0.50,0 0.408,0.038 0.309,0.038 0.238,0.108 0.146,0.146 0.108,0.238 0.038,0.309 0.038,0.408 0,0.50 0.038,0.592 0.038,0.691 0.108,0.762 0.146,0.854 0.238,0.892   0.309,0.962 0.408,0.962 0.50,1 0.592,0.962 0.691,0.962 0.762,0.892 0.854,0.854 0.892,0.762 0.962,0.691 " />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape7">
+          <polygon points="0.916,0.584 1,0.50 0.916,0.416 0.916,0.328 0.854,0.265 0.854,0.146 0.735,0.146 0.672,0.084 0.584,0.084   0.50,0 0.416,0.084 0.328,0.084 0.265,0.146 0.146,0.146 0.146,0.265 0.084,0.328 0.084,0.416 0,0.50 0.084,0.584 0.084,0.672 0.146,0.735 0.146,0.854 0.265,0.854   0.328,0.916 0.416,0.916 0.50,1 0.584,0.916 0.672,0.916 0.735,0.854 0.854,0.854 0.854,0.735 0.916,0.672 " />
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape8">
+          <path d="m1,0.50l-0.037,-0.037c-0.025,-0.025 -0.039,-0.059 -0.039,-0.094l0,-0.199c0,-0.052 -0.042,-0.094 -0.094,-0.094l-0.199,0c-0.035,0 -0.069,-0.014 -0.094,-0.039l-0.037,-0.037l-0.037,0.037c-0.025,0.025 -0.059,0.039 -0.094,0.039l-0.199,0c-0.052,0 -0.094,0.042 -0.094,0.094l0,0.199c0,0.035 -0.014,0.069 -0.039,0.094l-0.037,0.037l0.037,0.037c0.025,0.025 0.039,0.059 0.039,0.094l0,0.199c0,0.052 0.042,0.094 0.094,0.094l0.199,0c0.035,0 0.069,0.014 0.094,0.039l0.037,0.037l0.037,-0.037c0.025,-0.025 0.059,-0.039 0.094,-0.039l0.199,0c0.052,0 0.094,-0.042 0.094,-0.094l0,-0.199c0,-0.035 0.014,-0.069 0.039,-0.094l0.037,-0.037z"/>
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape9">
+          <path d="m0.92,1l-0.92,0l0,-0.92c0,-0.044 0.036,-0.08 0.08,-0.08l0.92,0l0,0.92c0,0.044 -0.036,0.08 -0.08,0.08z"/>
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape10">
+          <polygon points="0.118,0 0,0.118 0,0.882 0.118,1 0.882,1 1,0.882 1,0.118 0.882,0 "/>
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape11">
+          <polygon points="0.081,0 0,0.081 0,0.919 0.081,1 0.919,1 1,0.919 1,0.081 0.919,0 "/>
+        </clipPath>
+      </defs>
+
+      <defs>
+        <clipPath id="path-<%= id %>-shape12">
+          <path d="m1,0.839l0,-0.678c-0.089,0 -0.161,-0.072 -0.161,-0.161l-0.678,0c0,0.089 -0.072,0.161 -0.161,0.161l0,0.678c0.089,0 0.161,0.072 0.161,0.161l0.678,0c0,-0.089 0.072,-0.161 0.161,-0.161z"/>
+        </clipPath>
+      </defs>
+      
+      <g class="imageObj" clip-path="url(#path-none)">
+        <image height="100%" width="100%" xlink:href="<%= usersDataStorage %><%= src %>" preserveAspectRatio="none"/>
+      </g>
+  </svg>
+
+  <svg class="clip-svg svg-reflect" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" x="0" y="0" width="100%" height="100%" mask="url(#mask-ref-<%= id %>)" >
+    <g class="imageObjRef" transform="translate(0 <%= height %>) scale(1 -1)">
+      <image height="100%" width="100%" xlink:href="<%= usersDataStorage %><%= src %>" preserveAspectRatio="none"/>
+    </g>
+  </svg>
+
+</div>
+
+
+<div class="qLoverlay loader_code" style="" >
+    <div class='loader'  style="">
+        <div class="loader_wrap" style="">
+            <div class="container">
+                <div class="ring1">
+                    <div class="ring2">
+                        <div class="ring3"></div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="c_awesome">LOADING AWESOME</div>
+        </div>
+    </div>
+</div>
+</script>
+<script type='text/template' id='pdf'><div class="crop_wrapper">
+	<iframe src="https://docs.google.com/gview?url=<%= usersDataStorage %><%= src %>&embedded=true" 
+	style="width:100%; height:100%;" frameborder="0"></iframe>
+</div>
+
+<div class="qLoverlay loader_code" style="" >
+    <div class='loader'  style="">
+        <div class="loader_wrap" style="">
+            <div class="container">
+                <div class="ring1">
+                    <div class="ring2">
+                        <div class="ring3"></div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="c_awesome">LOADING AWESOME</div>
+        </div>
+    </div>
+</div>
+</script>
+<script type='text/template' id='text'><div class = 'vm-text'
+     style = 'padding:<%= padding.vertical %>px <%= padding.horizontal %>px;
+              width: calc(<%= width %>px - <%=  padding.horizontal %>px * 2 - <% if (borderStyle && borderStyle != "none") { %><%= borderWidth %>px * 2<% } else { %> 0px <% } %>);
+              line-height: <%= lineHeight %>;
+              <% if (font.size) { %>
+              font-size: <%= font.size %>px;
+              <% } %>
+              font-family: <%= font.name %>;
+              text-align: <%= align %>;
+              letter-spacing: <%= letterSpacing / 10 %>pt;
+              '
+><%= text %></div>
+</script>
+<script type='text/template' id='svg'>
+</script>
+<script type='text/template' id='audio'><audio controls hidden>
+  <source src="<%= audioStorage %><%= hash %>.mp3" type="audio/mpeg">
+  <source src="<%= audioStorage %><%= hash %>.ogg" type="audio/ogg">
+</audio>
+</script>
+<script type='text/template' id='infogr-widget'><canvas></canvas>
+</script>
+<script type='text/template' id='array'><div class="array-wrapper">
+	<div class="array-spot">
+	</div>
+</div>
+</script>
+<script type='text/template' id='clock'><div class="svg-wrapper">
+	<svg id="clock1" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewbox="0 0 200 200" style="display: none;" >
+		<image class="frame" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-frame.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-frame.svg" width="100%" height="100%"/>		
+		<image class="handle-hour" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-hour.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-hour.svg" width="100%" height="100%"/>
+		<image class="handle-minute" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-minute.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-minute.svg" width="100%" height="100%"/>
+		<image class="handle-second" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-second.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-second.svg" width="100%" height="100%"/>
+		<image class="center" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-center.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-center.svg" width="100%" height="100%"/>
+		<text  class="period" fill="#000" font-family="Verdana" font-size="12" x="65%" y="40%" width="100%" height="100%"></text>
+	</svg>
+	<svg id="clock2" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewbox="0 0 200 200" style="display: none;" >
+		<image class="frame" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock2-frame.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock2-frame.svg" width="100%" height="100%"/>		
+		<image class="handle-hour" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock2-hour.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock2-hour.svg" width="100%" height="100%"/>
+		<image class="handle-minute" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock2-minute.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock2-minute.svg" width="100%" height="100%"/>
+		<image class="handle-second" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock2-second.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock1-second.svg" width="100%" height="100%"/>
+		<text  class="period" fill="#fff" font-family="Verdana" font-size="10" x="55%" y="65%" width="100%" height="100%"></text>
+	</svg>
+	<svg id="clock3" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewbox="0 0 200 200" style="display: none;" >
+		<image class="frame" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock3-frame.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock3-frame.svg" width="100%" height="100%"/>		
+		<image class="frame" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock3-frame2.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/clocks/clock3-frame2.svg" width="100%" height="100%"/>
+		<text  class="time" fill="#a0a18a" font-family="Verdana" font-size="30" x="0" y="0" width="100%" height="100%"></text>
+		<text  class="period" fill="#a0a18a" font-family="Verdana" font-size="12" x="146" y="135" width="100%" height="100%"></text>
+	</svg>
+</div></script>
+<script type='text/template' id='countdown'><div class="svg-wrapper"> 
+	<svg id="countdown1" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewbox="0 0 200 200" style="display: none;" >
+		<circle class="bg" cx="100" cy="100" r="90" stroke="transparent" stroke-width="0" fill="#fff"/></circle>
+		<circle class="range" cx="100" cy="100" r="51" stroke="#ef8122" stroke-width="32" fill="transparent"/></circle>
+		<path class="bgValue" fill="#114e7d" d="m100,65c-19.3,0 -35,15.7 -35,35s15.7,35 35,35c19.3,0 35,-15.7 35,-35s-15.7,-35 -35,-35zm0,-65c-55.2,0 -100,44.8 -100,100s44.8,100 100,100c55.2,0 100,-44.8 100,-100s-44.8,-100 -100,-100zm84.5,108.1l-1.9,-0.2l-0.2,1.6l1.9,0.2c-0.3,2.4 -0.6,4.8 -1.1,7.2l-1.9,-0.4l-0.3,1.5l1.8,0.4c-0.5,2.4 -1.1,4.7 -1.9,7l-1.8,-0.6l-0.5,1.5l1.8,0.6c-0.8,2.3 -1.6,4.6 -2.6,6.8l-1.7,-0.8l-0.7,1.5l1.7,0.8c-1,2.2 -2.1,4.4 -3.3,6.5l-4.2,-2.4l-0.8,1.4l4.2,2.4c-1.2,2.1 -2.6,4.1 -4,6.1l-1.5,-1.1l-1,1.3l1.5,1.1c-1.4,1.9 -3,3.8 -4.6,5.6l-1.4,-1.3l-1.1,1.2l1.4,1.3c-1.6,1.8 -3.4,3.5 -5.1,5.1l-1.3,-1.4l-1.2,1.1l1.3,1.4c-1.8,1.6 -3.7,3.1 -5.6,4.6l-1.1,-1.5l-1.3,1l1.1,1.5c-2,1.4 -4,2.7 -6.1,4l-2.4,-4.2l-1.4,0.8l2.4,4.2c-2.1,1.2 -4.3,2.3 -6.5,3.3l-0.8,-1.7l-1.5,0.7l0.8,1.7c-2.2,1 -4.5,1.8 -6.8,2.6l-0.6,-1.8l-1.5,0.5l0.6,1.8c-2.3,0.7 -4.6,1.3 -7,1.9l-0.3,-1.9l-1.6,0.3l0.4,1.9c-2.4,0.5 -4.8,0.8 -7.2,1.1l-0.2,-1.9l-1.6,0.2l0.2,1.9c-2.4,0.2 -4.8,0.3 -7.3,0.4l0,-9.4l-1.6,0l0,9.4c-2.4,0 -4.9,-0.1 -7.3,-0.4l0.2,-1.9l-1.6,-0.2l-0.2,1.9c-2.4,-0.3 -4.8,-0.6 -7.2,-1.1l0.4,-1.9l-1.4,-0.3l-0.4,1.8c-2.4,-0.5 -4.7,-1.1 -7,-1.9l0.6,-1.8l-1.5,-0.5l-0.6,1.8c-2.3,-0.8 -4.6,-1.6 -6.8,-2.6l0.8,-1.7l-1.5,-0.7l-0.8,1.7c-2.2,-1 -4.4,-2.1 -6.5,-3.3l2.4,-4.2l-1.4,-0.8l-2.4,4.2c-2.1,-1.2 -4.1,-2.6 -6.1,-4l1.1,-1.5l-1.3,-1l-1.1,1.5c-1.9,-1.4 -3.8,-3 -5.6,-4.6l1.3,-1.4l-1.2,-1.1l-1.3,1.4c-1.8,-1.6 -3.5,-3.4 -5.1,-5.1l1.4,-1.3l-1.1,-1.2l-1.4,1.3c-1.6,-1.8 -3.1,-3.7 -4.6,-5.6l1.5,-1.1l-1,-1.3l-1.5,1.1c-1.4,-2 -2.7,-4 -4,-6.1l4.2,-2.4l-0.8,-1.4l-4.2,2.4c-1.2,-2.1 -2.3,-4.3 -3.3,-6.5l1.7,-0.8l-0.7,-1.5l-1.7,0.8c-1,-2.2 -1.8,-4.5 -2.6,-6.8l1.8,-0.6l-0.5,-1.5l-1.8,0.6c-0.7,-2.3 -1.3,-4.6 -1.9,-7l1.9,-0.3l-0.3,-1.6l-1.9,0.4c-0.5,-2.4 -0.8,-4.8 -1.1,-7.2l1.9,-0.2l-0.2,-1.6l-1.9,0.2c-0.2,-2.4 -0.3,-4.8 -0.4,-7.3l9.4,0l0,-1.6l-9.4,0c0,-2.4 0.1,-4.9 0.4,-7.3l1.9,0.2l0.2,-1.6l-1.9,-0.2c0.3,-2.4 0.6,-4.8 1.1,-7.2l1.9,0.4l0.3,-1.4l-1.8,-0.4c0.5,-2.4 1.1,-4.7 1.9,-7l1.8,0.6l0.5,-1.5l-1.9,-0.7c0.8,-2.3 1.6,-4.6 2.6,-6.8l1.7,0.8l0.7,-1.5l-1.7,-0.8c1,-2.2 2.1,-4.4 3.3,-6.5l4.2,2.4l0.8,-1.4l-4.2,-2.4c1.2,-2.1 2.6,-4.1 4,-6.1l1.5,1.1l1,-1.3l-1.5,-1.1c1.4,-1.9 3,-3.8 4.6,-5.6l1.4,1.3l1.1,-1.2l-1.4,-1.3c1.6,-1.8 3.4,-3.5 5.1,-5.1l1.3,1.4l1.2,-1.1l-1.3,-1.4c1.8,-1.6 3.7,-3.1 5.6,-4.6l1.1,1.5l1.3,-1l-1.1,-1.5c2,-1.4 4,-2.7 6.1,-4l2.4,4.2l1.4,-0.8l-2.4,-4.2c2.1,-1.2 4.3,-2.3 6.5,-3.3l0.8,1.7l1.5,-0.7l-0.8,-1.7c2.2,-1 4.5,-1.8 6.8,-2.6l0.6,1.8l1.5,-0.5l-0.7,-1.7c2.3,-0.7 4.6,-1.3 7,-1.9l0.5,1.9l1.6,-0.3l-0.4,-1.9c2.4,-0.5 4.8,-0.8 7.2,-1.1l0.2,1.9l1.6,-0.2l-0.2,-1.9c2.4,-0.2 4.8,-0.3 7.3,-0.4l0,9.4l1.6,0l0,-9.4c2.4,0 4.9,0.1 7.3,0.4l-0.2,1.9l1.6,0.2l0.2,-1.9c2.4,0.3 4.8,0.6 7.2,1.1l-0.4,1.9l1.4,0.3l0.4,-1.8c2.4,0.5 4.7,1.1 7,1.9l-0.6,1.8l1.5,0.5l0.6,-1.8c2.3,0.8 4.6,1.6 6.8,2.6l-0.8,1.7l1.5,0.7l0.8,-1.7c2.2,1 4.4,2.1 6.5,3.3l-2.4,4.2l1.4,0.8l2.4,-4.2c2.1,1.2 4.1,2.6 6.1,4l-1.1,1.5l1.3,1l1.1,-1.5c1.9,1.4 3.8,3 5.6,4.6l-1.3,1.4l1.2,1.1l1.3,-1.4c1.8,1.6 3.5,3.4 5.1,5.1l-1.4,1.3l1.1,1.2l1.4,-1.3c1.6,1.8 3.1,3.7 4.6,5.6l-1.5,1.1l1,1.3l1.5,-1.1c1.4,2 2.7,4 4,6.1l-4.2,2.4l0.8,1.4l4.2,-2.4c1.2,2.1 2.3,4.3 3.3,6.5l-1.7,0.8l0.7,1.5l1.7,-0.8c1,2.2 1.8,4.5 2.6,6.8l-1.8,0.6l0.5,1.5l1.8,-0.6c0.7,2.3 1.3,4.6 1.9,7l-1.9,0.3l0.3,1.6l1.9,-0.4c0.5,2.4 0.8,4.8 1.1,7.2l-1.9,0.2l0.2,1.6l1.9,-0.2c0.2,2.4 0.3,4.8 0.4,7.3l-9.4,0l0,1.6l9.4,0c-0.1,2.4 -0.2,4.8 -0.4,7.2z"/>
+		<text  class="value" fill="#fff" font-family="Verdana" font-size="34" x="78" y="105" width="100%" height="100%"></text>
+		<text  class="format" fill="#fff" font-family="Verdana" font-size="13" x="89" y="120" width="100%" height="100%"></text>
+	</svg>
+	<svg id="countdown2" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewbox="0 0 200 200" style="display: none;" >
+		<circle class="bg" cx="100" cy="100" r="90" stroke="transparent" stroke-width="0" fill="#fff"/></circle>
+		<circle class="range" cx="100" cy="100" r="70" stroke="#f69c81" stroke-width="38" fill="transparent"/></circle>
+		<circle class="bgValue" cx="100" cy="100" r="52" stroke="transparent" stroke-width="0" fill="#35c0c7"/></circle>
+		<image class="frame" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/counter/countdown2-frame.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/counter/countdown2-frame.svg" width="100%" height="100%"/>
+		<text  class="value" fill="#fff" font-family="Verdana" font-size="50" x="69" y="105" width="100%" height="100%"></text>
+		<text  class="format" fill="#fff" font-family="Verdana" font-size="30" x="75" y="135" width="100%" height="100%"></text>
+	</svg>
+	<svg id="countdown3" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewbox="0 0 200 200" style="display: none;" >
+		<circle class="bg" cx="100" cy="113" r="84" stroke="transparent" stroke-width="0" fill="#fff"/></circle>
+		<circle class="range" cx="87" cy="100" r="50" stroke="#29bfd0" stroke-width="40" fill="transparent"/></circle>
+		<image class="frame" xlink:href="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/counter/countdown3-frame.svg" src="https://dh7fnycu2r4y5.cloudfront.net/svgwidgets/counter/countdown3-frame.svg" width="100%" height="100%"/>
+		<circle class="bgValue" cx="100" cy="113" r="32" stroke="#828284" stroke-width="1" fill="#fff"/></circle>
+		<text  class="value" fill="#232323" font-family="Verdana" font-size="34" x="78" y="118" width="100%" height="100%"></text>
+		<text  class="format" fill="#232323" font-family="Verdana" font-size="13" x="89" y="133" width="100%" height="100%"></text>
+	</svg>
+</div></script>
+<script type='text/template' id='thermometer'><div class="svg-wrapper svg-wrapper-thermometer svg-wrapper-<%= style %>">
+	<% if (style == 'thermometer-1') { %>
+	<svg class="thermometer-1" xmlns="http://www.w3.org/2000/svg" width="127.79px" height="400px" viewbox="0 0 127.79 400" >
+		<path xmlns="http://www.w3.org/2000/svg" class="Background" fill=<%= colors[0] %> d="M63.9,0L63.9,0C28.6,0,0,28.6,0,63.9v272.9c0,35.3,28.6,63.9,63.9,63.9h0  c35.3,0,63.9-28.6,63.9-63.9V63.9C127.7,28.6,99.1,0,63.9,0z"/>
+
+		<path xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" fill=<%= colors[1] %> d="M74.9,327.2v-289H54.7v288.2C44.4,330.1,37,340,37,351.6c0,14.8,12,26.8,26.8,26.8  c14.8,0,26.8-12,26.8-26.8C90.7,340.7,84.2,331.4,74.9,327.2z M63.9,370.7c-10.7,0-19.5-8.7-19.5-19.5c0-8.1,5.2-15.5,12.8-18.3  l4.8-1.8v-9.4h5.5v9.8l4.3,2c7,3.2,11.4,10.1,11.4,17.7C83.3,361.9,74.6,370.7,63.9,370.7z"/>
+
+		<polygon xmlns="http://www.w3.org/2000/svg" class="Measurements-right" fill="rgba(255,255,255,0.2)" points="98.1,78.8 98.1,76.8 83,76.8 83,65.2 93.2,65.2 93.2,63.2 83,63.2 83,51.5 97.3,51.5   97.3,49.5 83,49.5 83,49.5 81,49.5 80.6,322.8 82.6,322.8 82.6,322.8 96.8,322.8 96.8,320.8 82.6,320.8 82.7,310.3 92.6,310.3   92.6,308.3 82.7,308.3 82.7,297.4 98.1,297.4 98.1,295.4 82.7,295.4 82.7,283.8 93.2,283.8 93.2,281.8 82.7,281.8 82.7,270.1   98.1,270.1 98.1,268.1 82.7,268.1 82.7,256.4 93.2,256.4 93.2,254.4 82.7,254.4 82.7,242.8 98.1,242.8 98.1,240.8 82.8,240.8   82.8,229.1 93.2,229.1 93.2,227.1 82.8,227.1 82.8,215.4 98.1,215.4 98.1,213.4 82.8,213.4 82.8,201.8 93.2,201.8 93.2,199.8   82.8,199.8 82.8,188.1 98.1,188.1 98.1,186.1 82.8,186.1 82.8,174.5 93.2,174.5 93.2,172.5 82.9,172.5 82.9,160.8 98.1,160.8   98.1,158.8 82.9,158.8 82.9,147.1 93.2,147.1 93.2,145.1 82.9,145.1 82.9,133.5 98.1,133.5 98.1,131.5 82.9,131.5 82.9,119.8   93.2,119.8 93.2,117.8 82.9,117.8 82.9,106.1 98.1,106.1 98.1,104.1 83,104.1 83,92.5 93.2,92.5 93.2,90.5 83,90.5 83,78.8 "/>
+		<polygon xmlns="http://www.w3.org/2000/svg" class="Measurements-left" fill="rgba(255,255,255,0.2)" points="46.8,49.5 46.8,49.5 46.8,49.5 46.8,51.5 46.8,51.5 46.8,53.6 46.8,61.7 46.8,61.7 46.8,62   36.8,62 36.8,64 46.8,64 46.7,74.8 31.3,74.8 31.3,76.8 46.7,76.8 46.7,88.5 36.2,88.5 36.2,90.5 46.7,90.5 46.7,102.1 31.3,102.1   31.3,104.1 46.7,104.1 46.7,115.8 36.2,115.8 36.2,117.8 46.7,117.8 46.7,129.5 31.3,129.5 31.3,131.5 46.7,131.5 46.6,143.1   36.2,143.1 36.2,145.1 46.6,145.1 46.6,156.8 31.3,156.8 31.3,158.8 46.6,158.8 46.6,170.5 36.2,170.5 36.2,172.5 46.6,172.5   46.6,184.1 31.3,184.1 31.3,186.1 46.6,186.1 46.6,197.8 36.2,197.8 36.2,199.8 46.6,199.8 46.5,211.4 31.3,211.4 31.3,213.4   46.5,213.4 46.5,225.1 36.2,225.1 36.2,227.1 46.5,227.1 46.5,238.8 31.3,238.8 31.3,240.8 46.5,240.8 46.5,252.4 36.2,252.4   36.2,254.4 46.5,254.4 46.5,266.1 31.3,266.1 31.3,268.1 46.5,268.1 46.4,279.8 36.2,279.8 36.2,281.8 46.4,281.8 46.4,293.4   31.3,293.4 31.3,295.4 46.4,295.4 46.4,307.1 36.2,307.1 36.2,309.1 46.4,309.1 46.4,319.6 46.4,322.8 48.4,322.8 48.8,49.5 "/>
+
+		<g class="ProgressBarTank" stroke=<%= colors[2] %> fill=<%= colors[2] %>>
+			<text xmlns="http://www.w3.org/2000/svg" class="MeasurementMax" dx="42" dy="55" text-anchor="end" stroke-width="0" style="font-family:'Helvetica'; font-size:16px;">100</text>
+			<text xmlns="http://www.w3.org/2000/svg" class="MeasurementMin" dx="42" dy="327" text-anchor="end" stroke-width="0" style="font-family:'Helvetica'; font-size:16px;">0</text>
+
+			<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" x1="65" y1="325" x2="65" y2="48" stroke-width="6" stroke=<%= colors[2] %>/>
+			<line xmlns="http://www.w3.org/2000/svg" x1="65" y1="322" x2="65" y2="335" stroke-width="6"/>
+			<circle xmlns="http://www.w3.org/2000/svg" cx="64" cy="352" r="21" stroke="black" stroke-width="0"/>			
+		</g>
+		<text xmlns="http://www.w3.org/2000/svg" class="thermometerValue" dx="64" dy="357" text-anchor="middle" fill=<%= textColor %> style="font-family:'Helvetica'; font-size:16px;">100</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'thermometer-2') { %>
+	<svg class="thermometer-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="103.75px" height="200px" viewBox="0 0 207.5 400" xml:space="preserve">
+		<path class="Background" fill=<%= colors[0] %> d="M169.8,278.3c-4.3-2-7.1-6.1-7.1-10.7V20.2c0-10.7-8.3-19.6-18.6-19.9C138.9,0.1,134,2,130.2,5.7  c-3.8,3.6-5.8,8.5-5.8,13.8v248.2c0,4.5-2.7,8.7-7,10.6c-24.4,11.1-39.4,36.5-37.2,63.3c2.6,31.2,28,56.1,59.3,58.1  c1.4,0.1,2.7,0.1,4.1,0.1c16.2,0,31.5-6,43.5-17.2c12.7-12,20-28.9,20-46.3C207.1,311.3,192.5,288.6,169.8,278.3z"/>
+		<path class="ProgressBarBg" fill=<%= colors[1] %> d="M168.5,281c-5.5-2.5-9-7.8-9-13.6V19.9c0-8.9-6.9-16.4-15.4-16.6c-0.2,0-0.3,0-0.5,0  c-4.2,0-8.1,1.6-11.1,4.5c-3.1,3-4.8,7.1-4.8,11.4v248.2c0,5.8-3.5,11.2-8.9,13.6c-23.2,10.5-37.4,34.6-35.3,60  c2.4,29.6,26.6,53.2,56.2,55.1c16.9,1.1,32.9-4.7,45.1-16.2c12.3-11.5,19-27.1,19-43.9C203.9,312.3,190,290.8,168.5,281z"/>
+		<g class="ProgressBarTank" stroke=<%= colors[2] %> fill=<%= colors[2] %>>
+			<path xmlns="http://www.w3.org/2000/svg" d="M173.4,292.1l-80.9,64.3c1.5,4.1,3.6,7.9,6,11.5l84.8-67.5C180.4,297.3,177.1,294.5,173.4,292.1z   M166,288c-3.9-1.8-7-4.6-9.2-8l-67.5,53.7c-0.2,2.8-0.2,5.6,0,8.5c0.2,2.3,0.6,4.6,1.1,6.9l76.3-60.7  C166.5,288.3,166.3,288.1,166,288z M132.9,273.2l-0.5,0.4c-1.5,6.2-5.7,11.6-11.6,14.3c-14.8,6.8-25.5,20-29.6,35.3l61.9-50H132.9z   M196.3,324.4L118.9,386c4.4,2.3,9.2,3.9,14.2,4.9l64.8-51.5c0-0.6,0-1.2,0-1.8C198,333.1,197.4,328.7,196.3,324.4z M180.8,377.2  c8.1-7.6,13.5-17.2,15.9-27.8L143.2,392C157.3,392.1,170.5,386.9,180.8,377.2z M187.8,306l-84.9,67.6c2.9,3.2,6.1,6.1,9.6,8.6  l81.5-64.9C192.4,313.2,190.3,309.5,187.8,306z"/>
+			<path xmlns="http://www.w3.org/2000/svg" d="M133.3,262.3l20-15.9v-16.2l-20,15.9V262.3z M133.3,211.8l20-15.9v-16.2l-20,15.9V211.8z   M152.8,257.1l-19.9,16.1h20.2l0.2-0.2c-0.3-1.4-0.5-2.7-0.5-4.2V257.1z M133.3,19.5v15l18.9-15H133.3z M133.3,186.2l20-15.9V154  l-20,15.9V186.2z M133.3,237.1l20-15.9v-16.2l-20,15.9V237.1z M133.3,85.1l20-15.9V52.9l-20,15.9V85.1z M133.3,43.5v16.2l20-15.9  V27.6L133.3,43.5z M133.3,135.6l20-15.9v-16.2l-20,15.9V135.6z M133.3,160.9l20-15.9v-16.2l-20,15.9V160.9z M133.3,110.3l20-15.9  V78.2l-20,15.9V110.3z"/>
+
+		</g>
+		<line class="ProgressBar" xmlns="http://www.w3.org/2000/svg" x1="143" y1="17" x2="143" y2="265" stroke-width="24" stroke=<%= colors[1] %>/>
+		<polygon class="arrow" fill=<%= colors[0] %> points="115.4,95.9 105.5,103.3 95.6,110.7 95.6,95.9 95.6,81.2 105.5,88.5 "/>
+		<text class="thermometerValue" dx="92" dy="107" text-anchor="end" fill=<%= textColor %> style="font-family:'Helvetica'; font-size:32px;">73%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'thermometer-3') { %>
+	<svg class="thermometer-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300px" height="174px" viewBox="0 0 300 174" xml:space="preserve">
+		<rect class="Background" x="88" y="88" fill=<%= colors[0] %> width="124" height="62"/>
+		<g class="ProgressBarTank" stroke=<%= colors[2] %> fill=<%= colors[2] %>>
+			<text xmlns="http://www.w3.org/2000/svg" class="MeasurementMax" dx="258" dy="171" text-anchor="middle" stroke-width="0" style="font-family:'Helvetica'; font-size:20px;">100</text>
+			<text xmlns="http://www.w3.org/2000/svg" class="MeasurementMin" dx="42" dy="171" text-anchor="middle" stroke-width="0" style="font-family:'Helvetica'; font-size:20px;">0</text>
+		</g>
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" cx="150" cy="150" r="105" fill="rgba(0,0,0,0)" stroke-width="90" stroke=<%= colors[1] %> />
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBar" cx="150" cy="150" r="105" fill="rgba(0,0,0,0)" stroke-width="90" stroke=<%= colors[2] %> />
+		<text xmlns="http://www.w3.org/2000/svg" class="thermometerValue" dx="150" dy="140" text-anchor="middle" fill=<%= textColor %> style="font-family:'Helvetica'; font-size:28px;">100</text>
+	</svg>
+	<% } %>
+
+</div></script>
+<script type='text/template' id='radial'><div class="svg-wrapper svg-wrapper-radial svg-wrapper-<%= style %>">
+	<% if (style == 'radial-1') { %>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="radial-1" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" xml:space="preserve">
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" cx="100" cy="100" r="92" fill="rgba(0,0,0,0)" stroke-width="16" stroke="#414042" />
+
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBar" cx="100" cy="100" r="92" fill="rgba(0,0,0,0)" stroke-width="16" stroke="#1DAFBA"/>
+
+		<text xmlns="http://www.w3.org/2000/svg" class="radialValue" fill="<%= textColor %>"" dx="100" dy="122" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-size:64px; fill: #414042;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'radial-2') { %>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="radial-2" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" xml:space="preserve">
+		<circle class="Background" fill="#1DAFBA" cx="100" cy="100" r="80"/>
+
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" cx="100" cy="100" r="95" fill="rgba(0,0,0,0)" stroke-width="10" stroke="#414042" />
+
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBar" cx="100" cy="100" r="95" fill="rgba(0,0,0,0)" stroke-width="10" stroke="#1DAFBA" />
+
+		<text xmlns="http://www.w3.org/2000/svg" class="radialValue" fill="<%= textColor %>" dx="100" dy="115" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-size:42px; fill: #fff;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'radial-3') { %>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="radial-3" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" xml:space="preserve">
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" cx="100" cy="100" r="80" fill="rgba(0,0,0,0)" stroke-width="40" stroke="#414042" />
+
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBar" cx="100" cy="100" r="80" fill="rgba(0,0,0,0)" stroke-width="40" stroke="#1DAFBA" />
+
+		<circle class="Background" fill="#1DAFBA" cx="100" cy="100" r="62"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="radialValue" fill="<%= textColor %>" dx="100" dy="115" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-size:42px; fill: #fff;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'radial-4') { %>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="radial-4" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" xml:space="preserve">
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" cx="100" cy="100" r="80" fill="rgba(0,0,0,0)" stroke-width="40" stroke="#414042" />
+
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBar" cx="100" cy="100" r="80" fill="rgba(0,0,0,0)" stroke-width="40" stroke="#1DAFBA" />
+
+		<circle class="Background" fill="#1DAFBA" cx="100" cy="100" r="62"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="radialValue" fill="<%= textColor %>" dx="130" dy="108" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-size:19px; fill: #fff;">100%</text>
+		<line xmlns="http://www.w3.org/2000/svg" class="divider" x1="99" y1="88" x2="99" y2="112" stroke="#808285" stroke-width="2"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="radialValueRest" dx="70" dy="108" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-size:19px; fill: #fff;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'radial-5') { %>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="radial-5" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" xml:space="preserve">
+		<defs>
+			<linearGradient class="path" x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="65%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="65%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<circle class="ProgressBarBg" fill="url(#grad1)" cx="100" cy="100" r="85"/>
+
+		<circle xmlns="http://www.w3.org/2000/svg" class="Background" cx="100" cy="100" r="86" fill="rgba(0,0,0,0)" stroke-width="24" stroke="#FFF" />
+
+		<circle xmlns="http://www.w3.org/2000/svg" class="ProgressBar" cx="100" cy="100" r="86" fill="rgba(0,0,0,0)" stroke-width="6" stroke="#1DAFBA"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="radialValue" fill="<%= textColor %>" dx="100" dy="120" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-size:54px; fill: #fff;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'radial-6') { %>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="radial-6" x="0px" y="0px" width="240px" height="300px" viewBox="0 0 240 300" xml:space="preserve">
+		<circle class="ProgressBarBg" cx="137.4" cy="197.9" r="51.05" fill="rgba(0,0,0,0)" stroke="#1DB0D6" stroke-width="102.1"/>
+		<circle class="ProgressBar" cx="137.4" cy="197.9" r="51.05" fill="rgba(0,0,0,0)" stroke="#1DB0D6" stroke-width="102.1"/>
+		<circle class="Center" cx="137.4" cy="197.9" r="5.4" fill="<%= textColor %>"/>
+		<rect class="Line" x="135.7" y="50.5" fill=<%= textColor %> width="3.5" height="147.7"/>
+		<polygon class="Background" fill="#B7B7B7" points="0,0 9.6,11.5 19.1,23 9.6,34.5 0,45.9 139.2,45.9 139.2,0"/>
+		<polygon class="BackgroundShadow" fill="#ACABAB" points="107,45.9 139.2,45.9 139.2,0"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="radialValue" fill="<%= textColor %>" dx="70" dy="36" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:34px; fill: #a1a1a1;">100%</text>
+	</svg>
+	<% } %>
+
+</div></script>
+<script type='text/template' id='progressbar'><div class="svg-wrapper svg-wrapper-progressbar svg-wrapper-<%= style %>">
+	<% if (style == 'progressbar-1') { %>
+	<svg class="progressbar-1" xmlns="http://www.w3.org/2000/svg" width="300px" height="43.2px" viewbox="0 0 300 43.2" >
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" stroke-linecap="round" x1="11" y1="21.6" x2="289" y2="21.6" stroke="#414042" stroke-width="22"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" stroke-linecap="round" x1="11" y1="21.6" x2="289" y2="21.6" stroke="#1DAFBA" stroke-width="22"/>
+		<circle xmlns="http://www.w3.org/2000/svg" class="Background" style="fill:#1DAFBA; stroke:#414042; stroke-width: 2px;" cx="20.5" cy="21.6" r="20"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="20.5" dy="26.5" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:13px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-1v') { %>
+	<svg class="progressbar-1v" xmlns="http://www.w3.org/2000/svg" height="300px" width="43.2px" viewbox="0 0 43.2 300" >
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" stroke-linecap="round" y2="11" x2="21.6" y1="289" x1="21.6" stroke="#414042" stroke-width="22"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" stroke-linecap="round" y2="11" x2="21.6" y1="289" x1="21.6" stroke="#1DAFBA" stroke-width="22"/>
+		<circle xmlns="http://www.w3.org/2000/svg" class="Background" style="fill:#1DAFBA; stroke:#414042; stroke-width: 2px;" cy="20.5" cx="21.6" r="20"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dy="24.7" dx="21.6" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:13px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-2') { %>
+	<svg class="progressbar-2" xmlns="http://www.w3.org/2000/svg" width="300px" height="43.2px" viewbox="0 0 300 43.2" >
+		<defs>
+			<linearGradient class="path" x1="66" y1="0" x2="288" y2="0" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<line xmlns="http://www.w3.org/2000/svg" class="Background" stroke-linecap="round" x1="21.6" y1="21.6" x2="278.4" y2="21.6" stroke="#414042" stroke-width="43.2"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" stroke-linecap="round" x1="75" y1="21.6" x2="278.4" y2="21.6" stroke="#FFFFFF" stroke-width="30"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" stroke-linecap="round" x1="75" y1="21.6" x2="278.4" y2="21.6" stroke="url(#grad1)" stroke-width="19"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="32" dy="28" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:18px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-2v') { %>
+	<svg class="progressbar-2v" xmlns="http://www.w3.org/2000/svg" height="300px" width="43.2px" viewbox="0 0 43.2 300" >
+		<defs>
+			<linearGradient class="path" y1="254" x2="0" y2="12" x1="0" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<line xmlns="http://www.w3.org/2000/svg" class="Background" stroke-linecap="round" y1="21.6" x1="21.6" y2="278.4" x2="21.6" stroke="#414042" stroke-width="43.2"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" stroke-linecap="round" y1="245" x1="21.6" y2="21.6" x2="21.6" stroke="#FFFFFF" stroke-width="30"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" stroke-linecap="round" y1="245" x1="21.6" y2="21.6" x2="21.6" stroke="url(#grad1)" stroke-width="19"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dy="282" dx="21.6" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:15px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-3') { %>
+	<svg class="progressbar-3" xmlns="http://www.w3.org/2000/svg" width="210px" height="33px" viewbox="0 0 210 33" >
+		<defs>
+			<linearGradient class="path" x1="5" y1="0" x2="160" y2="0" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<rect xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" width="163" height="29" x="1" y="1" style="fill:#fff;" />
+
+		<path xmlns="http://www.w3.org/2000/svg" class="Background" style="fill:#808285;" d="M165.5,5.5V0H0v31.4h165.5v-5.5h9.5V5.5H165.5z M162.6,28.4H2.8V2.9h159.8V28.4z"/>
+
+		<path xmlns="http://www.w3.org/2000/svg" class="ProgressBar" fill="#61A29E" d="M5.1,25.9h11.8V5.5H5.1V25.9z M21.1,25.9h11.8V5.5H21.1V25.9z M52.9,25.9h11.8  V5.5H52.9V25.9z M37,25.9h11.8V5.5H37V25.9z M68.9,5.5v20.4h11.8V5.5H68.9 M84.8,25.9h11.8V5.5H84.8V25.9z M100.7,25.9h11.8V5.5h-11.8V25.9z M148.5,5.5v20.4  h11.8V5.5H148.5z M116.7,25.9h11.8V5.5h-11.8V25.9z M132.6,25.9h11.8V5.5h-11.8V25.9z"/>
+
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="193" dy="19.7" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:12px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-3v') { %>
+	<svg class="progressbar-3v" xmlns="http://www.w3.org/2000/svg" height="210px" width="33px" viewbox="0 0 33 210" >
+		<defs>
+			<linearGradient class="path" x1="5" y1="0" x2="160" y2="0" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<rect xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" height="163" width="29" y="47" x="2" style="fill:#fff;" />
+
+		<path xmlns="http://www.w3.org/2000/svg" class="Background"  transform="rotate(-90) translate(-210, 0)" style="fill:#808285;" d="M165.5,5.5V0H0v31.4h165.5v-5.5h9.5V5.5H165.5z M162.6,28.4H2.8V2.9h159.8V28.4z"/>
+
+		<path xmlns="http://www.w3.org/2000/svg" class="ProgressBar"  transform="rotate(-90) translate(-210, 0)"  fill="#61A29E" d="M5.1,25.9h11.8V5.5H5.1V25.9z M21.1,25.9h11.8V5.5H21.1V25.9z M52.9,25.9h11.8  V5.5H52.9V25.9z M37,25.9h11.8V5.5H37V25.9z M68.9,5.5v20.4h11.8V5.5H68.9 M84.8,25.9h11.8V5.5H84.8V25.9z M100.7,25.9h11.8V5.5h-11.8V25.9z M148.5,5.5v20.4  h11.8V5.5H148.5z M116.7,25.9h11.8V5.5h-11.8V25.9z M132.6,25.9h11.8V5.5h-11.8V25.9z"/>
+
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dy="29" dx="16.5" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:12px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-4') { %>
+	<svg class="progressbar-4" xmlns="http://www.w3.org/2000/svg" width="300px" height="44px" viewbox="0 0 300 44" >
+		<defs>
+			<linearGradient class="path" x1="8" y1="0" x2="292" y2="0" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<line xmlns="http://www.w3.org/2000/svg" class="Background" stroke-linecap="round" x1="14" y1="30" x2="286" y2="30" stroke="#414042" stroke-width="28"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" stroke-linecap="round" x1="14" y1="30" x2="286" y2="30" stroke="#ffffff" stroke-width="22"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" stroke-linecap="round" x1="14" y1="30" x2="286" y2="30" stroke="#1DAFBA" stroke-width="12"/>
+		<polygon xmlns="http://www.w3.org/2000/svg" class="arrow" style="fill:#414042;" points="9,12.6 1.5,0.6 17.5,0.6"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="37" dy="12.5" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:18px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-4v') { %>
+	<svg class="progressbar-4v" xmlns="http://www.w3.org/2000/svg" height="300px" width="88px" viewbox="0 0 88 300" >
+		<defs>
+			<linearGradient class="path" y2="8" x2="0" y1="292" x1="0" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<line xmlns="http://www.w3.org/2000/svg" class="Background" stroke-linecap="round" y1="14" x1="74" y2="286" x2="74" stroke="#414042" stroke-width="28"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" stroke-linecap="round" y1="14" x1="74" y2="286" x2="74" stroke="#ffffff" stroke-width="22"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" stroke-linecap="round" y1="14" x1="74" y2="286" x2="74" stroke="#1DAFBA" stroke-width="12"/>
+		<polygon xmlns="http://www.w3.org/2000/svg" class="arrow" style="fill:#414042;" points="56.6,9 44.6,1.5 44.6,17.5"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dy="16" dx="21.5" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:18px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-5') { %>
+	<svg class="progressbar-5" xmlns="http://www.w3.org/2000/svg" width="65px" height="305px" viewbox="0 0 65 305" >
+		<defs>
+			<linearGradient class="path" x1="0" y1="300" x2="0" y2="30" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<path xmlns="http://www.w3.org/2000/svg" class="ProgressBar" fill="#61A29E" stroke-width="2" stroke-location="inside" d="M60.5,279.5H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4v-11.7C65,281.4,63,279.5,60.5,279.5z M60.5,251.6H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4v-11.7C65,253.6,63,251.6,60.5,251.6z M60.5,223.8H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4v-11.7C65,225.8,63,223.8,60.5,223.8z M60.5,196H4.4C2,196,0,198,0,200.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4v-11.7C65,198,63,196,60.5,196z M60.5,168.2H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4v-11.7C65,170.2,63,168.2,60.5,168.2z M60.5,84.7H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4V89.1C65,86.7,63,84.7,60.5,84.7z M60.5,140.4H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4v-11.7C65,142.3,63,140.4,60.5,140.4z M60.5,112.5H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4V117C65,114.5,63,112.5,60.5,112.5z M60.5,29.1H4.4c-2.4,0-4.4,2-4.4,4.4v11.7c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4V33.5C65,31.1,63,29.1,60.5,29.1z M60.5,56.9H4.4c-2.4,0-4.4,2-4.4,4.4V73c0,2.4,2,4.4,4.4,4.4h56.1  c2.4,0,4.4-2,4.4-4.4V61.3C65,58.9,63,56.9,60.5,56.9z"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="32.5" dy="22.3" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:22px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-6') { %>
+	<svg class="progressbar-6" xmlns="http://www.w3.org/2000/svg" width="595px" height="70.3px" viewbox="0 0 595 70.3" >
+		<rect class="ProgressBarPart1" y="36.3" style="fill:#1DAFBA;" width="127" height="34"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarText" dx="60" dy="62" text-anchor="middle" fill=<%= textColor %> style="font-family:'Roboto', sans-serif; font-size:22px;"><%= text %></text>
+		<polygon class="ProgressBarPart2" style="fill:#1B8E8E;" points="103,14.9 103,36.3 127,36.3 "/>
+		<polygon class="ProgressBarPart3" style="fill:#1DAFBA;" points="103.5,14.6 127.8,36.1 127.8,48.7 153.4,48.7 153.4,14.6  "/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" x1="152" y1="31.65" x2="474" y2="31.65" stroke="#1DAFBA" stroke-width="33.7"/>
+		<polygon class="arrow" style="fill:#1DAFBA;" points="486.7,16.2 473.2,0.8 473.2,60.8 473.2,60.8 473.2,62.4 486.7,47 500.1,31.6  "/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="550" dy="45" text-anchor="middle" fill="#FFFFFF" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:35px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-7') { %>
+	<svg class="progressbar-7" xmlns="http://www.w3.org/2000/svg" width="300px" height="18px" viewbox="0 0 300 18" >
+		<defs>
+			<linearGradient class="path" x1="52" y1="-13" x2="285" y2="52" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<path xmlns="http://www.w3.org/2000/svg" class="ProgressBar" fill="#1DAFBA" d="M130.3,0l-5.3,18h5.8L136,0H130.3z M137.1,0l-5.3,18h5.8l5.3-18H137.1z M116.6,0  l-5.3,18h5.8l5.3-18H116.6z M164.3,0L159,18h5.8l5.3-18H164.3z M157.5,0l-5.3,18h5.8l5.3-18H157.5z M109.8,0l-5.3,18h5.8l5.3-18  H109.8z M150.7,0l-5.3,18h5.8l5.3-18H150.7z M143.9,0l-5.3,18h5.8l5.3-18H143.9z M123.4,0l-5.3,18h5.8l5.3-18H123.4z M55.3,0L50,18  h5.8L61,0H55.3z M68.9,0l-5.3,18h5.8l5.3-18H68.9z M62.1,0l-5.3,18h5.8l5.3-18H62.1z M48.5,0l-5.3,18h5.8l5.3-18H48.5z M89.4,0  L84,18h5.8l5.3-18H89.4z M96.2,0l-5.3,18h5.8l5.3-18H96.2z M103,0l-5.3,18h5.8l5.3-18H103z M75.7,0l-5.3,18h5.8l5.3-18H75.7z   M82.6,0l-5.3,18H83l5.3-18H82.6z M198.4,0l-5.3,18h5.8l5.3-18H198.4z M253,0l-5.3,18h5.8l5.3-18H253z M239.3,0L234,18h5.8l5.3-18  H239.3z M259.8,0l-5.3,18h5.8l5.3-18H259.8z M246.1,0l-5.3,18h5.8l5.3-18H246.1z M266.6,0l-5.3,18h5.8l5.3-18H266.6z M287,0l-5.3,18  h5.8l5.3-18H287z M293.9,0l-5.3,18h5.8l5.3-18H293.9z M280.2,0l-5.3,18h5.8L286,0H280.2z M273.4,0l-5.3,18h5.8l5.3-18H273.4z   M218.9,0l-5.3,18h5.8l5.3-18H218.9z M184.8,0l-5.3,18h5.8l5.3-18H184.8z M191.6,0l-5.3,18h5.8l5.3-18H191.6z M205.2,0l-5.3,18h5.8  L211,0H205.2z M178,0l-5.3,18h5.8l5.3-18H178z M225.7,0l-5.3,18h5.8l5.3-18H225.7z M232.5,0l-5.3,18h5.8l5.3-18H232.5z M212.1,0  l-5.3,18h5.8l5.3-18H212.1z M171.2,0l-5.3,18h5.8l5.3-18H171.2z"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="23" dy="15" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:14px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-7v') { %>
+	<svg class="progressbar-7v" xmlns="http://www.w3.org/2000/svg" width="32px" height="280px" viewbox="0 0 32 280" >
+		<defs>
+			<linearGradient class="path" x1="52" y1="-13" x2="285" y2="52" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<path xmlns="http://www.w3.org/2000/svg" transform="rotate(-90) translate(-300, 8)" class="ProgressBar" fill="#1DAFBA" d="M130.3,0l-5.3,18h5.8L136,0H130.3z M137.1,0l-5.3,18h5.8l5.3-18H137.1z M116.6,0  l-5.3,18h5.8l5.3-18H116.6z M164.3,0L159,18h5.8l5.3-18H164.3z M157.5,0l-5.3,18h5.8l5.3-18H157.5z M109.8,0l-5.3,18h5.8l5.3-18  H109.8z M150.7,0l-5.3,18h5.8l5.3-18H150.7z M143.9,0l-5.3,18h5.8l5.3-18H143.9z M123.4,0l-5.3,18h5.8l5.3-18H123.4z M55.3,0L50,18  h5.8L61,0H55.3z M68.9,0l-5.3,18h5.8l5.3-18H68.9z M62.1,0l-5.3,18h5.8l5.3-18H62.1z M48.5,0l-5.3,18h5.8l5.3-18H48.5z M89.4,0  L84,18h5.8l5.3-18H89.4z M96.2,0l-5.3,18h5.8l5.3-18H96.2z M103,0l-5.3,18h5.8l5.3-18H103z M75.7,0l-5.3,18h5.8l5.3-18H75.7z   M82.6,0l-5.3,18H83l5.3-18H82.6z M198.4,0l-5.3,18h5.8l5.3-18H198.4z M253,0l-5.3,18h5.8l5.3-18H253z M239.3,0L234,18h5.8l5.3-18  H239.3z M259.8,0l-5.3,18h5.8l5.3-18H259.8z M246.1,0l-5.3,18h5.8l5.3-18H246.1z M266.6,0l-5.3,18h5.8l5.3-18H266.6z M287,0l-5.3,18  h5.8l5.3-18H287z M293.9,0l-5.3,18h5.8l5.3-18H293.9z M280.2,0l-5.3,18h5.8L286,0H280.2z M273.4,0l-5.3,18h5.8l5.3-18H273.4z   M218.9,0l-5.3,18h5.8l5.3-18H218.9z M184.8,0l-5.3,18h5.8l5.3-18H184.8z M191.6,0l-5.3,18h5.8l5.3-18H191.6z M205.2,0l-5.3,18h5.8  L211,0H205.2z M178,0l-5.3,18h5.8l5.3-18H178z M225.7,0l-5.3,18h5.8l5.3-18H225.7z M232.5,0l-5.3,18h5.8l5.3-18H232.5z M212.1,0  l-5.3,18h5.8l5.3-18H212.1z M171.2,0l-5.3,18h5.8l5.3-18H171.2z"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="16" dy="276" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:12px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-8') { %>
+	<svg class="progressbar-8" xmlns="http://www.w3.org/2000/svg" width="65px" height="300px" viewbox="0 0 65 300" >
+		<defs>
+			<linearGradient class="path" x1="52" y1="-13" x2="285" y2="52" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBarBg" x1="32.5" y1="286.2" x2="32.5" y2="13.8" stroke="#E6E7E8" stroke-width="65"/>
+		<ellipse xmlns="http://www.w3.org/2000/svg" class="ProgressBarBgCap" style="fill:#E6E7E8;" cx="32.5" cy="13.8" rx="32.5" ry="13.8"/>
+ 		<ellipse xmlns="http://www.w3.org/2000/svg" class="ProgressBarBot" style="fill:#1DAFBA;" cx="32.5" cy="286.2" rx="32.5" ry="13.8"/>
+		<line xmlns ="http://www.w3.org/2000/svg" class="ProgressBar" x1="32.5" y1="286.2" x2="32.5" y2="13.8" stroke="#1DAFBA" stroke-width="65"/>
+		<ellipse xmlns="http://www.w3.org/2000/svg" class="ProgressBarCap" style="fill:#A3CCCC;" cx="32.5" cy="13.8" rx="32.5" ry="13.8"/>
+		<ellipse xmlns="http://www.w3.org/2000/svg" class="ProgressBarBgCap" style="fill:rgba(144,144,144,0.4);" cx="32.5" cy="13.8" rx="32.5" ry="13.8"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="32.5" dy="285" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:22px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-9') { %>
+	<svg class="progressbar-9" xmlns="http://www.w3.org/2000/svg" width="183.3px" height="341.3px" viewbox="0 0 183.3 341.3" >
+		<defs>
+			<linearGradient class="path-top" x1="91.65" y1="180" x2="91.65" y2="70" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+			<linearGradient class="path-bot" x1="91.65" y1="313" x2="91.65" y2="202" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+
+		<path class="ProgressBarBg" fill="#FFFFFF" stroke="#414042" stroke-width="3px" d="M144.3,114c0-0.5,0-1,0-1.4c0-27.1-23.6-49.2-52.7-49.2S39,85.4,39,112.6c0,0.5,0,1,0,1.4  l0.1,1.8H39v10.3c0,8.3,3.4,16.3,9.5,22.3l43.1,42.8l-43.1,42.8c-6.1,6.1-9.5,14-9.5,22.3v10.3H39l0,1.8c0,0.5,0,1,0,1.4  c0,27.1,23.6,49.2,52.7,49.2s52.7-22.1,52.7-49.2c0-0.5,0-1,0-1.4l-0.1-1.8h0.1v-10.3c0-8.3-3.4-16.3-9.5-22.3l-43.1-42.8l43.1-42.8  c6.1-6.1,9.5-14,9.5-22.3v-10.3h-0.1L144.3,114z"/>
+		<path class="Background" fill="#414042" d="M183.3,54.5V41.3H0v13.2h16.6v128.3c-1.8,1.3-3,3.5-3,5.9s1.2,4.5,3,5.9v133.5H0v13.2  h183.3v-13.2h-16.8V197.2c1.8-1.3,3-3.5,3-5.9c0-2.4-1.2-4.5-3-5.9V54.5H183.3z M157.9,185.4c-1.8,1.3-3,3.5-3,5.9  c0,2.4,1.2,4.5,3,5.9v130.9H25.2V194.6c1.8-1.3,3-3.5,3-5.9s-1.2-4.5-3-5.9V54.5h132.7V185.4z"/>
+		<path class="ProgressBarTop" fill="#1DAFBA" d="M130.6,144.4c5-4.9,7.7-11.4,7.7-18.1v-11.7l0-0.8l0-0.3c0-0.3,0-0.5,0-0.8  c0-23.8-20.9-43.2-46.7-43.2S45,88.9,45,112.7l0,0.2l0,13.4c0,6.7,2.7,13.1,7.7,18.1l39,38.8L130.6,144.4z"/>
+		<path class="ProgressBarBot" fill="#1DAFBA" d="M52.7,238.5c-5,4.9-7.7,11.4-7.7,18.1v11.7l0,0.8l0,0.3c0,0.3,0,0.5,0,0.8  c0,23.8,20.9,43.2,46.7,43.2s46.7-19.4,46.7-43.2l0-0.2l0-13.4c0-6.7-2.7-13.1-7.7-18.1l-39-38.8L52.7,238.5z"/>
+		<line xmlns ="http://www.w3.org/2000/svg" class="ProgressBarLine" x1="50%" y1="200" x2="50%" y2="313" stroke="#1DAFBA" stroke-width="2"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="91.65" dy="32" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:40px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-10') { %>
+	<svg class="progressbar-10" xmlns="http://www.w3.org/2000/svg" width="172.6px" height="323.2px" viewbox="0 0 172.6 323.2" >
+		<defs>
+			<linearGradient class="path-top" x1="91.65" y1="190" x2="91.65" y2="81" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+			<linearGradient class="path-bot" x1="91.65" y1="295" x2="91.65" y2="185" gradientUnits="userSpaceOnUse">
+				<stop class="step-1" offset="0%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-2" offset="50%" style="stop-color:#ccc;stop-opacity:1" />
+				<stop class="step-3" offset="50%" style="stop-color:#00b2da;stop-opacity:1" />
+				<stop class="step-4" offset="100%" style="stop-color:#00b2da;stop-opacity:1" />
+			</linearGradient>
+		</defs>
+
+		<path class="ProgressBarBg" fill="#FFFFFF" stroke="#414042" stroke-width="4px" d="M154.5,111.6V71.8H18v39.8c0,22.6,9.6,44.3,26.2,59.6l17.8,16.3l-17.8,16.3  c-16.7,15.3-26.2,37-26.2,59.6v39.8h136.5v-39.8c0-22.6-9.6-44.3-26.2-59.6l-17.8-16.3l17.8-16.3C145,155.9,154.5,134.2,154.5,111.6  z"/>
+		<g class="Background" fill="#414042">
+			<rect y="51.7"  width="172.6" height="16.7"/>
+			<rect y="306.5" width="172.6" height="16.7"/>
+		</g>
+		<path class="ProgressBarBot" fill="#1DAFBA" d="M121.6,212.5l-27-22.6c-0.1-0.1-0.2-0.2-0.3-0.3c-0.1,0-0.1-0.1-0.2-0.1  c-0.3-0.1-0.5-0.3-0.8-0.5l-0.2-0.1l-2.1-1.2c-2.9-1.7-6.5-1.7-9.3,0l-2.1,1.2l-0.3,0.2c-0.2,0.2-0.3,0.3-0.5,0.4  c-0.4,0.3-0.8,0.7-1.2,1c0,0-0.1,0-0.1,0.1l-26.3,22c-14.6,13.4-23,32.4-23,52.2v20.5c0,5.2,4.2,9.4,9.4,9.4h97.8  c5.2,0,9.4-4.2,9.4-9.4v-20.5C144.5,244.9,136.2,225.8,121.6,212.5z"/>
+		<path class="ProgressBarTop" fill="#1DAFBA" d="M51,164.7l27,22.6c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0,0.1,0.1,0.2,0.1  c0.3,0.1,0.5,0.3,0.8,0.5l0.2,0.1l2.1,1.2c2.9,1.7,6.5,1.7,9.3,0l2.1-1.2l0.3-0.2c0.2-0.2,0.3-0.3,0.5-0.4c0.4-0.3,0.8-0.7,1.2-1  c0,0,0.1,0,0.1-0.1l26.3-22c14.6-13.4,23-32.4,23-52.2V92c0-5.2-4.2-9.4-9.4-9.4H37.4c-5.2,0-9.4,4.2-9.4,9.4v20.5  C28,132.3,36.4,151.3,51,164.7z"/>
+		<line xmlns ="http://www.w3.org/2000/svg" class="ProgressBarLine" x1="50%" y1="190" x2="50%" y2="295" stroke="#1DAFBA" stroke-width="2"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="86.3" dy="38" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:200; font-size:48px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-11') { %>
+	<svg class="progressbar-11" xmlns="http://www.w3.org/2000/svg" width="300px" height="26.4px" viewbox="0 0 300 26.4" >
+		<rect class="level-1" fill="#8EC349" stroke="#414042" stroke-width="2" x="1" y="1" width="24.4" height="24.4"/>
+		<rect class="level-2" fill="#8EC349" stroke="#414042" stroke-width="2" x="25.7" y="1" width="24.4" height="24.4"/>
+		<rect class="level-3" fill="#8EC349" stroke="#414042" stroke-width="2" x="50.1" y="1" width="24.4" height="24.4"/>
+		<rect class="level-4" fill="#8EC349" stroke="#414042" stroke-width="2" x="73.7" y="1" width="24.4" height="24.4"/>
+		<rect class="level-5" fill="#FEDF50" stroke="#414042" stroke-width="2" x="98.3" y="1" width="24.4" height="24.4"/>
+		<rect class="level-6" fill="#FEDF50" stroke="#414042" stroke-width="2" x="122.3" y="1" width="24.4" height="24.4"/>
+		<rect class="level-7" fill="#FEDF50" stroke="#414042" stroke-width="2" x="147" y="1" width="24.4" height="24.4"/>
+		<rect class="level-8" fill="#E5422F" stroke="#414042" stroke-width="2" x="171.4" y="1" width="24.4" height="24.4"/>
+		<rect class="level-9" fill="#E5422F" stroke="#414042" stroke-width="2" x="195" y="1" width="24.4" height="24.4"/>
+		<rect class="level-10" fill="#E5422F" stroke="#414042" stroke-width="2" x="219.6" y="1" width="24.4" height="24.4"/>			
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="275" dy="20" fill=<%= textColor %> text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:20px;">100%</text>
+	</svg>
+	<% } %>
+
+	<% if (style == 'progressbar-12') { %>
+	<svg class="progressbar-12" xmlns="http://www.w3.org/2000/svg" width="562px" height="43.4px" viewbox="0 0 562 43.4" >
+		<rect class="ProgressBarPart1" x="0" y="9.4" fill="#64348D" width="127" height="34"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarText" dx="60" dy="34" text-anchor="middle" fill=<%= textColor %> style="font-family:'Roboto', sans-serif; font-size:22px;"><%= text %></text>
+		<polygon class="ProgressBarPart2" fill="#2A163A" points="127,43.4 127,34 106.5,34 "/>
+		<rect class="ProgressBarPart3" x="106.5" y="0" fill="#64348D" width="46" height="34"/>
+		<line xmlns="http://www.w3.org/2000/svg" class="ProgressBar" x1="151" y1="17" x2="474" y2="17" stroke="#64348D" stroke-width="34"/>
+		<text xmlns="http://www.w3.org/2000/svg" class="progressbarValue" dx="520" dy="29" text-anchor="middle" style="font-family:'Roboto', sans-serif; font-weight:300; font-size:30px;">100%</text>
+	</svg>
+	<% } %>
+
+</div></script>
+<script type="text/template" id="youtube-video"><iframe class="ytplayer<% if (mute) { %> muted<% } %>"
+  type="text/html"
+  width="<%= width %>"
+  height="<%= height %>"
+  src="<%= src %>"
+  frameborder="0"
+  allowfullscreen
+  id="ytv<%= id %>"
+  >
+</iframe>
+</script>
+<script type="text/template" id="vimeo-video"><iframe id="vplayer_<%= id %>"
+  class="vplayer"
+  src="<%= src %>" 
+  width="WIDTH"
+  height="HEIGHT"
+  frameborder="0"
+  webkitallowfullscreen
+  mozallowfullscreen
+  allowfullscreen>
+</iframe>
+</script>
+<script type="text/template" id="visme-video"><video id="vismevid<%= id %>"
+        onended=""
+        class="video-js vjs-default-skin vjs-big-play-centered"
+        <% if (mute) { %>muted<% } %>
+        <% if (controls) { %>controls<% } %>
+        <% if (autoplay) { %>autoplay<% } %>
+        <% if (loop) { %>loop<% } %>
+        preload="none"
+        width="<%= width %>"
+        height="<%= height %>"
+   	    poster="<%= thumbnail %>">
+     <source src="<%= src %>" type="video/mp4"  />
+   	 <source src="<%= src %>" type="video/webm"  />
+   	 <source src="<%= src %>" type="video/ogg"  />
+   	 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+</script>
+<script type="text/template" id="video-thumb"><img src="<%= thumbnail %>" style="width:<%= width %>px;height:<%= height %>px">
+</script>
+<script type="text/template" id="iframe"><iframe src="<%= src %>" height="<%= height %>" width="<%= width %>"></iframe>
+</script>
+<script type="text/template" id="map"><div class="map-container" style="width: 100%; height: 100%;"></div></script>
+<script type="text/template" id="chart"><div id="<%= id %>-amchart" class="ct-chart" style="height: 100%;"></div>
+</script>
+<script type="text/template" id="table"><div class = 'vm-table<% if (newversion) { %>s<% } %> vm-text'
+     style = 'width: calc(<%= width %>px - <%=  padding.horizontal %>px * 2 - <% if (borderStyle && borderStyle != "none") { %><%= borderWidth %>px * 2<% } else { %> 0px <% } %>);
+              height: calc(<%= height %>px - <%=  padding.vertical %>px * 2 - <% if (borderStyle && borderStyle != "none") { %><%= borderWidth %>px * 2<% } else { %> 0px <% } %>);
+              padding:<%= padding.vertical %>px <%= padding.horizontal %>px;
+              line-height: <%= lineHeight %>;
+              <% if (font.size) { %>
+                font-size: <%= font.size %>px;
+              <% } %>
+              font-family: <%= font.name %>;
+              text-align: <%= align %>;
+              '>
+    <%= text %>
+</div>
+</script>
+<script type="text/template" id="group"><div class="group-object"></div>
+</script>
+    
+<script>
+      app.bootstrap('project_id', "1454601281" );
+          app.bootstrap('is_share', "1" );
+        app.bootstrap('is_responsive', "1" );
+        app.bootstrap('auto_advance', "1" );
+        app.bootstrap('is_profile_hidden', "0" );
+        app.bootstrap('background_music', "" );
+        app.bootstrap('background_music_volume', null );
+        app.bootstrap('is_loop_background_music', "0" );
+        app.bootstrap('is_comments', "0" );
+        app.bootstrap('is_control_bar', "1" );
+        app.bootstrap('is_autoplay_animation', "1" );
+        app.bootstrap('is_registration', "0" );
+        app.bootstrap('loop_presentation', "0" );
+        app.bootstrap('background', "background:rgb(204, 204, 204)" );
+        app.bootstrap('is_presenter_view', "1" );
+        app.bootstrap('project_description', null );
+        app.bootstrap('screenshot', "http:\/\/d2txcgd90nunbk.cloudfront.net\/1f\/8d\/11\/2e\/1c1581b479aa4795640fec976c518702.jpg" );
+        app.bootstrap('project_name', "UFCW Endorsements Map" );
+        app.bootstrap('project_date', 1524690385 );
+        app.bootstrap('project_data', "{\"width\":1366,\"height\":768,\"colorPallete\":[{\"color\":\"#fafbff\"},{\"color\":\"#ebebeb\"},{\"color\":\"#91c11b\"},{\"color\":\"#818287\"},{\"color\":\"#b6b7ba\"},{\"color\":\"#00C5CE\"},{\"color\":\"#5A5A5E\"},{\"color\":\"#2b2b2b\"},{\"color\":\"#3d3d3b\"},{\"color\":\"#f57433\"},{\"color\":\"#d14f64\"},{\"color\":\"#55677B\"},{\"color\":\"#C64537#f0dbd2\"},{\"color\":\"#C64537\"},{\"color\":\"#F4A840\"},{\"color\":\"#58BBA6\"},{\"color\":\"#9DB95C\"},{\"color\":\"#5F0538\"},{\"color\":\"#FEFE00\"},{\"color\":\"#E93A35\"},{\"color\":\"#fffff\"},{\"color\":\"#ffffff\"},{\"color\":\"#FF8606\"},{\"color\":\"#fffffb\"},{\"color\":\"#596A7F\"},{\"color\":\"#ffc261\"},{\"color\":\"#59c9ae\"},{\"color\":\"#da5835\"},{\"color\":\"#179abe\"},{\"color\":\"#f0f0f0\"},{\"color\":\"#c5c5c8\"},{\"color\":\"#296ab0\"},{\"color\":\"#000000\"},{\"color\":\"#121212\"},{\"color\":\"#fec325\"}],\"template\":\"Modern\",\"templatePalette\":\"none\",\"slides\":[{\"id\":\"sl552\",\"name\":\"Slide 2\",\"type\":\"regular\",\"order\":0,\"width\":1366,\"height\":768,\"hidden\":false,\"editable\":true,\"transition\":{\"effect\":\"fade\",\"duration\":\"0.5\",\"type\":\"none\"},\"background\":{\"blur\":0,\"brightness\":0,\"colorOverlay\":0,\"contrast\":0,\"filter\":\"no-filter\",\"scale\":100,\"flipX\":false,\"flipY\":false,\"color\":[\"#ffffff\"],\"height\":0,\"hue\":0,\"opacity\":100,\"saturate\":0,\"type\":\"solid\",\"width\":0,\"x\":0,\"y\":0},\"objects\":[{\"type\":\"map\",\"name\":\"United States copy\",\"height\":716.4438782273,\"width\":1231.830404524,\"data\":{\"AL\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"AK\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"AZ\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Dr. Hiral Tipirneni\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"CD 8\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"99\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"http:\\\/\\\/hiralforcongress.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"-\",\"c415354728-title\":\"Candidate\"},\"AR\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"CA\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Gavin Newsom\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"UFCW Western States Council\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/gavinnewsom.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"-\",\"c415354728-title\":\"Candidate\"},\"CO\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"CT\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"DE\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"DC\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"FL\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"GA\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Stacey Abrams\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"1996\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/staceyabrams.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"-\",\"c415354728-title\":\"Candidate\"},\"HI\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"ID\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"IL\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"IN\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"IA\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"KS\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"KY\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"LA\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"ME\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"MD\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Roger Manno\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Congressional District 6\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"400, 27, 1994\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"http:\\\/\\\/rogermanno.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"MA\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"MI\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Gretchen Whitmer\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"876 and 951\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/www.gretchenwhitmer.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"MN\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"MS\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"MO\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"MT\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"NE\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"NV\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"NH\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"NJ\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Andy Kim\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Congressional District 3 \",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"1360\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/andykimforcongress.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"NM\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"NY\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"NC\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"ND\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"OH\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Rich Cordray\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"17A, 75, 880, 1059, ICWUC and RWDSU\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/cordrayforohio.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"Betty Sutton\",\"c415354728-title\":\"Candidate\"},\"OK\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"OR\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"PA\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"RI\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"SC\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"SD\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"TN\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"TX\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"UT\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"VT\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"VA\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"WA\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"WV\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"WI\":{\"fillColor\":\"#fec325\",\"c982410831\":\"Mahlon Mitchell\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"1473\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/mahlonmitchell.com\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},\"WY\":{\"fillColor\":\"#c5c5c8\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"}},\"dataColumnsRender\":[{\"data\":\"id\",\"header\":\"id\",\"readOnly\":true},{\"data\":\"display\",\"header\":\"\",\"readOnly\":true},{\"data\":\"color\",\"header\":\"Color\",\"readOnly\":true},{\"data\":\"name\",\"header\":\"Name\",\"readOnly\":true},{\"data\":\"c982410831\",\"header\":\"Candidate\"},{\"data\":\"c254001391\",\"header\":\"Office Running For\"},{\"data\":\"c206107983\",\"header\":\"Local Unions Who Have Endorsed\"},{\"data\":\"c398068145\",\"header\":\"Website\"},{\"data\":\"c308149603\",\"header\":\"\"},{\"data\":\"c415354728\",\"header\":\"Candidate\"}],\"states\":[{\"id\":\"AL\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Alabama\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"AK\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Alaska\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"AZ\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"Arizona\",\"c982410831\":\"Dr. Hiral Tipirneni\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"CD 8\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"99\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"http:\\\/\\\/hiralforcongress.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"-\",\"c415354728-title\":\"Candidate\"},{\"id\":\"AR\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Arkansas\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"CA\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"California\",\"c982410831\":\"Gavin Newsom\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"UFCW Western States Council\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/gavinnewsom.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"-\",\"c415354728-title\":\"Candidate\"},{\"id\":\"CO\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Colorado\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"CT\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Connecticut\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"DE\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Delaware\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"DC\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"District of Columbia\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"FL\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Florida\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"GA\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"Georgia\",\"c982410831\":\"Stacey Abrams\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"1996\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/staceyabrams.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"-\",\"c415354728-title\":\"Candidate\"},{\"id\":\"HI\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Hawaii\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"ID\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Idaho\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"IL\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Illinois\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"IN\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Indiana\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"IA\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Iowa\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"KS\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Kansas\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"KY\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Kentucky\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"LA\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Louisiana\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"ME\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Maine\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"MD\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"Maryland\",\"c982410831\":\"Roger Manno\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Congressional District 6\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"400, 27, 1994\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"http:\\\/\\\/rogermanno.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"MA\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Massachusetts\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"MI\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"Michigan\",\"c982410831\":\"Gretchen Whitmer\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"876 and 951\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/www.gretchenwhitmer.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"MN\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Minnesota\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"MS\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Mississippi\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"MO\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Missouri\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"MT\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Montana\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"NE\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Nebraska\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"NV\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Nevada\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"NH\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"New Hampshire\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"NJ\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"New Jersey\",\"c982410831\":\"Andy Kim\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Congressional District 3 \",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"1360\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/andykimforcongress.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"NM\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"New Mexico\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"NY\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"New York\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"NC\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"North Carolina\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"ND\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"North Dakota\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"OH\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"Ohio\",\"c982410831\":\"Rich Cordray\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"17A, 75, 880, 1059, ICWUC and RWDSU\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/cordrayforohio.com\\\/\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"Betty Sutton\",\"c415354728-title\":\"Candidate\"},{\"id\":\"OK\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Oklahoma\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"OR\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Oregon\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"PA\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Pennsylvania\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"RI\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Rhode Island\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"SC\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"South Carolina\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"SD\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"South Dakota\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"TN\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Tennessee\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"TX\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Texas\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"UT\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Utah\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"VT\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Vermont\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"VA\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Virginia\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"WA\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Washington\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"WV\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"West Virginia\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"WI\",\"display\":\"show\",\"color\":\"#fec325\",\"name\":\"Wisconsin\",\"c982410831\":\"Mahlon Mitchell\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"Governor\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"1473\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"https:\\\/\\\/mahlonmitchell.com\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"},{\"id\":\"WY\",\"display\":\"show\",\"color\":\"#c5c5c8\",\"name\":\"Wyoming\",\"c982410831\":\"\",\"c982410831-title\":\"Candidate\",\"c254001391\":\"\",\"c254001391-title\":\"Office Running For\",\"c206107983\":\"\",\"c206107983-title\":\"Local Unions Who Have Endorsed\",\"c398068145\":\"\",\"c398068145-title\":\"Website\",\"c308149603\":\"\",\"c308149603-title\":\"\",\"c415354728\":\"\",\"c415354728-title\":\"Candidate\"}],\"scope\":\"usa\",\"latlng\":[38,-97],\"defaultFill\":\"#c5c5c8\",\"paletteIndexes\":[4,5,0,0,0],\"borderColor\":\"#fff\",\"legend\":{\"activeData\":true,\"display\":false,\"data\":\"c982410831\",\"title\":\"Candidate\",\"textColor\":\"#000000\",\"colors\":[\"#93c317\",\"#7ba326\",\"#628235\",\"#4a6244\",\"#314152\"],\"labels\":[\"< NaNM\",\"NaNM - NaNM\",\"NaNM - NaNM\",\"NaNM - NaNM\",\"> NaNM\"]},\"showBorder\":true,\"popupOnHover\":true,\"popupTheme\":\"light\",\"highlightOnHover\":true,\"hideStates\":[],\"proportionLock\":true,\"id\":\"el2572\",\"x\":67,\"y\":26,\"lock\":false,\"rotation\":0,\"opacity\":100,\"animation\":{\"enter\":{\"delay\":0,\"name\":\"None\"},\"exit\":{\"delay\":0,\"name\":\"None\"}},\"transfer\":[1.4761396203728,\"-31.91105079650879,-10.807932853705045\"],\"order\":0,\"mapJson\":\"{\\\"type\\\":\\\"Topology\\\",\\\"transform\\\":{\\\"scale\\\":[0.035146302430243,0.0052408606860686],\\\"translate\\\":[-178.123152,18.948267]},\\\"objects\\\":{\\\"usa\\\":{\\\"type\\\":\\\"GeometryCollection\\\",\\\"geometries\\\":[{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"AL\\\",\\\"arcs\\\":[[0,1,2,3,4]],\\\"properties\\\":{\\\"name\\\":\\\"Alabama\\\"}},{\\\"type\\\":\\\"MultiPolygon\\\",\\\"id\\\":\\\"AK\\\",\\\"arcs\\\":[[[5]],[[6]],[[7]],[[8]],[[9]],[[10]],[[11]],[[12]],[[13]],[[14]],[[15]],[[16]],[[17]],[[18]],[[19]],[[20]],[[21]],[[22]],[[23]],[[24]],[[25]],[[26]],[[27]],[[28]],[[29]],[[30]],[[31]],[[32]],[[33]],[[34]],[[35]],[[36]],[[37]],[[38]],[[39]],[[40]],[[41]],[[42]],[[43]]],\\\"properties\\\":{\\\"name\\\":\\\"Alaska\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"AZ\\\",\\\"arcs\\\":[[44,45,46,47,48]],\\\"properties\\\":{\\\"name\\\":\\\"Arizona\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"AR\\\",\\\"arcs\\\":[[49,50,51,52,53,54]],\\\"properties\\\":{\\\"name\\\":\\\"Arkansas\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"CA\\\",\\\"arcs\\\":[[55,-47,56,57]],\\\"properties\\\":{\\\"name\\\":\\\"California\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"CO\\\",\\\"arcs\\\":[[58,59,60,61,62,63]],\\\"properties\\\":{\\\"name\\\":\\\"Colorado\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"CT\\\",\\\"arcs\\\":[[64,65,66,67]],\\\"properties\\\":{\\\"name\\\":\\\"Connecticut\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"DE\\\",\\\"arcs\\\":[[68,69,70,71]],\\\"properties\\\":{\\\"name\\\":\\\"Delaware\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"DC\\\",\\\"arcs\\\":[[72,73]],\\\"properties\\\":{\\\"name\\\":\\\"District of Columbia\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"FL\\\",\\\"arcs\\\":[[74,75,-2]],\\\"properties\\\":{\\\"name\\\":\\\"Florida\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"GA\\\",\\\"arcs\\\":[[76,77,-75,-1,78,79]],\\\"properties\\\":{\\\"name\\\":\\\"Georgia\\\"}},{\\\"type\\\":\\\"MultiPolygon\\\",\\\"id\\\":\\\"HI\\\",\\\"arcs\\\":[[[80]],[[81]],[[82]],[[83]],[[84]]],\\\"properties\\\":{\\\"name\\\":\\\"Hawaii\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"ID\\\",\\\"arcs\\\":[[85,86,87,88,89,90,91]],\\\"properties\\\":{\\\"name\\\":\\\"Idaho\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"IL\\\",\\\"arcs\\\":[[92,93,94,95,96,97]],\\\"properties\\\":{\\\"name\\\":\\\"Illinois\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"IN\\\",\\\"arcs\\\":[[98,99,-95,100,101]],\\\"properties\\\":{\\\"name\\\":\\\"Indiana\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"IA\\\",\\\"arcs\\\":[[102,-98,103,104,105,106]],\\\"properties\\\":{\\\"name\\\":\\\"Iowa\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"KS\\\",\\\"arcs\\\":[[107,108,-60,109]],\\\"properties\\\":{\\\"name\\\":\\\"Kansas\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"KY\\\",\\\"arcs\\\":[[110,111,112,113,-96,-100,114]],\\\"properties\\\":{\\\"name\\\":\\\"Kentucky\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"LA\\\",\\\"arcs\\\":[[115,116,117,-52]],\\\"properties\\\":{\\\"name\\\":\\\"Louisiana\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"ME\\\",\\\"arcs\\\":[[118,119]],\\\"properties\\\":{\\\"name\\\":\\\"Maine\\\"}},{\\\"type\\\":\\\"MultiPolygon\\\",\\\"id\\\":\\\"MD\\\",\\\"arcs\\\":[[[120]],[[-71,121,122,123,124,-74,125,126,127]]],\\\"properties\\\":{\\\"name\\\":\\\"Maryland\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"MA\\\",\\\"arcs\\\":[[128,129,130,131,-68,132,133,134]],\\\"properties\\\":{\\\"name\\\":\\\"Massachusetts\\\"}},{\\\"type\\\":\\\"MultiPolygon\\\",\\\"id\\\":\\\"MI\\\",\\\"arcs\\\":[[[-102,135,136]],[[137]],[[138,139]],[[140]]],\\\"properties\\\":{\\\"name\\\":\\\"Michigan\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"MN\\\",\\\"arcs\\\":[[-107,141,142,143,144]],\\\"properties\\\":{\\\"name\\\":\\\"Minnesota\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"MS\\\",\\\"arcs\\\":[[-4,145,-116,-51,146]],\\\"properties\\\":{\\\"name\\\":\\\"Mississippi\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"MO\\\",\\\"arcs\\\":[[-97,-114,147,-55,148,-108,149,-104]],\\\"properties\\\":{\\\"name\\\":\\\"Missouri\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"MT\\\",\\\"arcs\\\":[[150,151,-92,152,153]],\\\"properties\\\":{\\\"name\\\":\\\"Montana\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"NE\\\",\\\"arcs\\\":[[-105,-150,-110,-59,154,155]],\\\"properties\\\":{\\\"name\\\":\\\"Nebraska\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"NV\\\",\\\"arcs\\\":[[156,-48,-56,157,-88]],\\\"properties\\\":{\\\"name\\\":\\\"Nevada\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"NH\\\",\\\"arcs\\\":[[-135,158,159,-120,160]],\\\"properties\\\":{\\\"name\\\":\\\"New Hampshire\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"NJ\\\",\\\"arcs\\\":[[161,-69,162,163]],\\\"properties\\\":{\\\"name\\\":\\\"New Jersey\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"NM\\\",\\\"arcs\\\":[[164,165,166,-45,-62]],\\\"properties\\\":{\\\"name\\\":\\\"New Mexico\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"NY\\\",\\\"arcs\\\":[[-133,-67,167,-164,168,169,170]],\\\"properties\\\":{\\\"name\\\":\\\"New York\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"NC\\\",\\\"arcs\\\":[[171,172,-80,173,174]],\\\"properties\\\":{\\\"name\\\":\\\"North Carolina\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"ND\\\",\\\"arcs\\\":[[175,-154,176,-143]],\\\"properties\\\":{\\\"name\\\":\\\"North Dakota\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"OH\\\",\\\"arcs\\\":[[177,-115,-99,-137,178,179]],\\\"properties\\\":{\\\"name\\\":\\\"Ohio\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"OK\\\",\\\"arcs\\\":[[-149,-54,180,-165,-61,-109]],\\\"properties\\\":{\\\"name\\\":\\\"Oklahoma\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"OR\\\",\\\"arcs\\\":[[-89,-158,-58,181,182]],\\\"properties\\\":{\\\"name\\\":\\\"Oregon\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"PA\\\",\\\"arcs\\\":[[-163,-72,-128,183,-180,184,-169]],\\\"properties\\\":{\\\"name\\\":\\\"Pennsylvania\\\"}},{\\\"type\\\":\\\"MultiPolygon\\\",\\\"id\\\":\\\"RI\\\",\\\"arcs\\\":[[[185,-130]],[[186,-65,-132]]],\\\"properties\\\":{\\\"name\\\":\\\"Rhode Island\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"SC\\\",\\\"arcs\\\":[[187,-77,-173]],\\\"properties\\\":{\\\"name\\\":\\\"South Carolina\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"SD\\\",\\\"arcs\\\":[[-142,-106,-156,188,-151,-176]],\\\"properties\\\":{\\\"name\\\":\\\"South Dakota\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"TN\\\",\\\"arcs\\\":[[189,-174,-79,-5,-147,-50,-148,-113]],\\\"properties\\\":{\\\"name\\\":\\\"Tennessee\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"TX\\\",\\\"arcs\\\":[[-53,-118,190,-166,-181]],\\\"properties\\\":{\\\"name\\\":\\\"Texas\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"UT\\\",\\\"arcs\\\":[[191,-63,-49,-157,-87]],\\\"properties\\\":{\\\"name\\\":\\\"Utah\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"VT\\\",\\\"arcs\\\":[[-134,-171,192,-159]],\\\"properties\\\":{\\\"name\\\":\\\"Vermont\\\"}},{\\\"type\\\":\\\"MultiPolygon\\\",\\\"id\\\":\\\"VA\\\",\\\"arcs\\\":[[[193,-123]],[[120]],[[-126,-73,-125,194,-175,-190,-112,195]]],\\\"properties\\\":{\\\"name\\\":\\\"Virginia\\\"}},{\\\"type\\\":\\\"MultiPolygon\\\",\\\"id\\\":\\\"WA\\\",\\\"arcs\\\":[[[-183,196,-90]],[[197]],[[198]]],\\\"properties\\\":{\\\"name\\\":\\\"Washington\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"WV\\\",\\\"arcs\\\":[[-184,-127,-196,-111,-178]],\\\"properties\\\":{\\\"name\\\":\\\"West Virginia\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"WI\\\",\\\"arcs\\\":[[199,-93,-103,-145,200,-140]],\\\"properties\\\":{\\\"name\\\":\\\"Wisconsin\\\"}},{\\\"type\\\":\\\"Polygon\\\",\\\"id\\\":\\\"WY\\\",\\\"arcs\\\":[[-189,-155,-64,-192,-86,-152]],\\\"properties\\\":{\\\"name\\\":\\\"Wyoming\\\"}}]}},\\\"arcs\\\":[[[2632,3060],[5,-164],[7,-242],[4,-53],[3,-30],[-2,-19],[4,-11],[-5,-25],[0,-24],[-2,-32],[2,-57],[-2,-51],[3,-52]],[[2649,2300],[-14,-1],[-59,0],[-1,-25],[6,-37],[-1,-31],[2,-16],[-4,-28]],[[2578,2162],[-4,-6],[-7,31],[-1,47],[-2,6],[-3,-36],[-1,-34],[-7,9]],[[2553,2179],[-2,291],[6,363],[4,209],[-3,20]],[[2558,3062],[24,1],[50,-3]],[[1324,6901],[1,32],[6,-19],[-1,-32],[-8,4],[2,15]],[[1317,6960],[5,-23],[-3,-33],[-2,11],[0,45]],[[1285,7153],[6,5],[3,-8],[-1,-28],[-6,-6],[-5,17],[3,20]],[[1267,7137],[12,-7],[3,-36],[13,-41],[4,-25],[0,-21],[3,-4],[1,-27],[5,-27],[0,-25],[3,8],[2,-19],[1,-74],[-3,-17],[-7,3],[-3,38],[-2,-3],[-6,28],[-2,-10],[-5,10],[1,-28],[5,7],[3,-10],[-2,-39],[-5,4],[-9,49],[-2,25],[1,26],[-7,-2],[0,20],[5,2],[5,18],[-2,31],[-6,7],[-1,50],[-2,25],[-4,-18],[-2,28],[4,14],[-3,32],[2,8]],[[1263,6985],[5,-12],[4,15],[4,-7],[-4,-28],[-6,8],[-3,24]],[[1258,7247],[-4,19],[5,13],[15,-18],[7,1],[5,-36],[9,-29],[-1,-22],[-5,-11],[-6,5],[-5,-14],[-6,9],[-7,-9],[-1,45],[0,30],[-5,1],[-1,16]],[[1252,7162],[-4,14],[-4,32],[0,24],[3,11],[4,-11],[0,20],[12,-35],[1,-33],[-4,-5],[-3,-37],[3,-11],[-3,-43],[-5,9],[0,-27],[-3,13],[-2,54],[5,25]],[[1207,7331],[8,38],[3,-16],[7,-13],[6,-2],[0,-30],[6,-99],[0,-85],[-1,-22],[-4,13],[-10,84],[-7,25],[3,20],[-3,48],[-8,39]],[[1235,7494],[10,-15],[5,2],[0,-14],[8,-52],[-5,8],[-2,-18],[6,-27],[2,-48],[-6,-13],[-2,-16],[-10,-35],[-3,1],[-1,37],[2,22],[-1,32],[-3,40],[0,21],[-2,51],[-4,22],[-1,38],[7,-36]],[[1203,7324],[4,0],[4,-35],[-2,-24],[-6,-5],[0,38],[0,26]],[[1207,7331],[-5,7],[-3,26],[-6,18],[-5,37],[-6,17],[1,30],[4,10],[1,26],[3,-11],[8,-1],[6,17],[8,-23],[-5,-26],[2,-9],[4,28],[10,-9],[5,-21],[-3,-38],[3,-3],[3,-50],[-7,-7],[-14,41],[0,-42],[-4,-17]],[[883,7871],[-12,-48],[-1,-19],[-9,-12],[2,29],[10,30],[7,34],[3,-14]],[[870,7943],[-2,-39],[-4,-41],[-6,14],[5,47],[7,19]],[[863,9788],[3,-8],[15,-9],[8,5],[10,0],[12,-7],[7,4],[7,-15],[12,-18],[16,-4],[5,10],[11,6],[4,14],[12,2],[0,-9],[7,5],[15,-15],[9,-24],[10,-11],[2,-11],[8,-2],[8,-18],[1,-11],[5,9],[6,-7],[0,-1783],[13,-16],[2,17],[14,-24],[8,30],[18,4],[-3,-52],[4,-17],[10,-17],[2,-27],[29,-101],[4,-63],[6,17],[12,31],[7,1],[3,23],[0,34],[5,0],[1,31],[9,7],[13,26],[13,-45],[-1,-27],[3,-27],[7,-7],[10,-40],[-1,-12],[4,-22],[12,-25],[19,-110],[3,-29],[6,-29],[8,-65],[9,-55],[-3,-23],[9,-9],[-2,-33],[7,-14],[1,-38],[7,2],[14,-40],[9,-7],[5,-19],[4,-5],[1,-19],[9,-5],[3,-23],[-4,-43],[1,-36],[4,-58],[-4,-15],[-6,-53],[-10,-39],[-3,20],[-4,-6],[-3,39],[1,17],[-3,20],[7,21],[-2,7],[-7,-26],[-3,17],[-4,-10],[-12,42],[4,46],[-8,-15],[0,-23],[-6,17],[-1,22],[4,24],[-1,24],[-6,-19],[-6,42],[-3,-8],[-2,36],[5,23],[6,0],[-2,28],[3,36],[-5,-1],[-9,32],[-6,37],[-15,27],[0,77],[-4,9],[1,31],[-5,9],[-8,42],[-2,22],[-12,7],[-14,56],[-6,132],[-3,-30],[1,-27],[6,-53],[-1,-8],[3,-43],[0,-28],[-6,6],[-4,31],[-6,6],[-8,-9],[0,45],[-5,38],[-5,-12],[-17,40],[-2,-11],[10,-13],[7,-31],[3,-1],[1,-25],[4,-30],[-10,-16],[-5,10],[0,-26],[-8,20],[-2,14],[-5,0],[-13,38],[-10,33],[-1,20],[-5,30],[-14,21],[-9,21],[-14,26],[-9,24],[1,26],[2,-9],[3,17],[-3,38],[4,21],[-2,9],[-7,-40],[-14,-26],[-18,10],[-14,24],[-1,18],[-7,-4],[-7,14],[-17,12],[-9,1],[-21,-10],[-8,-7],[-10,27],[-12,12],[-3,17],[-2,28],[-8,-2],[-3,-25],[-15,34],[-2,14],[-15,-27],[-7,-32],[-3,30],[3,17],[4,-5],[14,22],[-2,17],[-6,-8],[-3,22],[-6,3],[-6,55],[-3,-13],[-8,-8],[-3,8],[-3,-18],[-11,6],[-1,-20],[-7,-5],[-3,7],[2,36],[-3,-1],[-5,-38],[7,-12],[1,-27],[4,-30],[-3,-31],[-5,10],[-2,-15],[6,-7],[3,-41],[-8,-9],[-4,9],[-7,-12],[-3,10],[-9,-2],[0,16],[-4,-10],[-3,-20],[-3,18],[-5,-25],[2,-12],[-6,-15],[-6,-2],[-3,-20],[-6,-17],[-4,6],[-5,-21],[-4,1],[-8,-43],[-9,-3],[-3,14],[-5,-23],[-11,17],[2,33],[8,11],[4,-2],[2,13],[8,25],[0,21],[-11,-28],[-9,16],[-1,12],[5,48],[8,34],[1,29],[2,5],[1,30],[-4,34],[10,12],[19,48],[4,-19],[6,-5],[9,20],[-10,26],[-4,20],[-7,-2],[-5,9],[-2,-8],[-9,-14],[-4,-26],[-9,-6],[-9,-30],[-1,-20],[-7,-11],[-2,-22],[-5,-13],[-2,-39],[-10,-25],[5,-20],[-4,-29],[-9,-5],[-1,-38],[-8,-13],[-3,15],[-4,-29],[-5,-1],[1,-21],[-11,-13],[-2,-57],[12,-3],[10,-16],[3,-19],[-4,-30],[-7,-19],[-6,-1],[0,-17],[-4,-6],[1,-21],[-4,-31],[-9,-29],[-5,0],[-5,-11],[-5,2],[-4,-11],[2,-16],[-7,-8],[-2,-23],[-5,14],[-5,-45],[-9,4],[1,-24],[-6,6],[-3,-11],[0,-32],[-6,-50],[-10,-6],[-7,-23],[-2,-13],[-5,18],[-8,-48],[-2,13],[-5,-4],[-1,-27],[-5,-10],[-6,4],[-4,-27],[8,-9],[-9,-60],[-25,-20],[-6,-54],[-2,12],[1,33],[-5,6],[-6,-13],[-1,-14],[-10,-22],[-4,-25],[-1,18],[-2,-21],[-6,14],[-10,-33],[-8,2],[1,25],[-4,24],[-3,-20],[1,-21],[-11,-64],[-3,16],[-1,-24],[-8,4],[-1,38],[-4,8],[-2,-14],[4,-16],[-2,-27],[-5,-13],[-5,29],[-5,2],[-1,-11],[5,-17],[-9,-27],[6,-7],[0,-13],[-5,9],[-7,-25],[-15,1],[-7,-16],[0,-13],[-8,-15],[-6,6],[-2,35],[6,12],[4,43],[6,1],[13,28],[10,1],[4,-27],[3,20],[-1,23],[6,10],[7,0],[8,50],[10,45],[12,40],[15,18],[6,-9],[6,12],[1,-17],[-3,-19],[4,-14],[1,23],[7,2],[2,-15],[5,-5],[0,18],[-8,15],[0,11],[5,49],[6,28],[9,27],[15,24],[10,35],[5,-13],[4,5],[-1,22],[1,21],[8,44],[11,28],[8,38],[0,21],[7,148],[11,40],[-1,31],[-27,-45],[-8,6],[-2,18],[-5,9],[-1,21],[-4,-10],[-3,-32],[5,-41],[-6,-18],[-5,7],[-9,64],[-6,33],[-4,0],[-2,-24],[-3,-4],[-4,19],[-5,4],[-2,32],[-16,-37],[-13,-26],[-1,-14],[-11,-22],[-6,20],[5,23],[-1,54],[-4,57],[7,24],[-6,49],[-5,27],[-4,39],[-6,17],[-2,-34],[-7,-8],[-12,-22],[-14,-9],[-7,2],[-7,12],[-1,30],[-5,9],[-9,42],[-8,8],[-8,46],[6,21],[1,39],[-5,-8],[0,24],[2,19],[-6,18],[0,-19],[-7,8],[-1,32],[-6,4],[-3,22],[0,27],[-5,-12],[-1,26],[7,6],[-6,30],[10,2],[0,35],[2,24],[18,77],[4,23],[3,-5],[-2,33],[7,55],[6,22],[11,9],[8,-9],[12,-33],[8,4],[11,32],[11,49],[6,6],[1,-13],[13,0],[12,10],[11,52],[0,12],[-5,48],[-1,28],[-8,31],[-3,26],[8,-7],[8,22],[0,20],[-10,39],[-8,-30],[-7,5],[-6,-17],[-8,-4],[-2,-11],[-9,-17],[-2,-28],[-5,-12],[-2,34],[-5,7],[-4,-26],[-2,12],[-10,19],[-20,-1],[-14,-21],[-6,-3],[-11,13],[-22,14],[-6,12],[-3,19],[2,26],[-8,22],[2,24],[5,12],[-2,31],[-8,0],[-6,8],[-13,6],[-7,16],[-10,16],[-1,19],[16,27],[20,43],[15,27],[8,-15],[8,-3],[2,21],[-5,3],[-1,18],[20,29],[22,22],[12,2],[7,-7],[-4,-32],[2,-22],[-3,-15],[4,-26],[8,5],[10,-5],[11,6],[4,-10],[7,-2],[7,10],[8,-11],[9,42],[5,2],[5,-8],[2,24],[-12,11],[-11,-9],[1,31],[-8,34],[-10,10],[-2,30],[7,8],[9,-31],[-1,-24],[4,-18],[10,-22],[2,23],[-11,30],[5,54],[-4,10],[-11,-12],[-11,3],[-2,10],[-6,-10],[-24,23],[0,24],[-7,54],[-6,19],[-9,17],[-19,46],[-9,18],[-8,4],[-13,31],[-12,18],[-1,6],[9,10],[4,29],[1,59],[25,-4],[31,13],[8,11],[12,29],[12,45],[3,45],[5,38],[10,33],[5,24],[13,38],[2,-10],[11,-3],[16,20],[10,21],[24,64],[9,4],[1,-10],[9,7],[9,-2],[18,9],[17,28],[17,58],[7,13],[2,-10],[26,-24],[2,-17],[-9,-22],[-4,-1],[0,-29],[14,9],[0,16],[6,14],[2,-8],[5,33],[13,-30],[-2,-23],[8,-6],[5,-14],[7,22],[13,1],[7,7],[18,-7],[10,-8],[-5,-45],[17,-12],[2,-11],[16,-20],[1,9],[12,13],[11,-1],[0,-11],[7,-1],[7,15],[11,2],[9,-6],[11,-16],[5,3],[7,-22],[4,9],[7,-7],[5,-13]],[[717,7456],[-1,-8],[-9,13],[7,49],[6,4],[4,45],[5,-40],[4,14],[8,-22],[0,-31],[-11,-4],[-5,-13],[-8,-7]],[[688,7363],[8,25],[-8,6],[0,22],[6,14],[5,-10],[0,-22],[3,15],[0,32],[5,-15],[1,21],[5,-12],[5,0],[5,11],[7,-20],[0,-55],[9,4],[-6,-37],[-11,15],[4,-24],[-3,-20],[-6,10],[0,-38],[-8,-10],[-3,-16],[-5,15],[-6,-40],[-4,-4],[-5,-18],[-2,43],[-6,-23],[-1,13],[-6,14],[0,39],[-6,15],[4,45],[11,28],[7,-2],[1,-21]],[[671,7185],[-6,-39],[-2,6],[8,33]],[[640,7055],[4,-2],[-1,-40],[-8,6],[-1,13],[6,23]],[[519,6933],[-2,-41],[-9,-33],[5,51],[2,-5],[4,28]],[[501,6947],[5,0],[0,-20],[-5,-23],[-5,15],[-3,-14],[-2,35],[2,12],[8,-5]],[[451,6875],[1,-16],[-3,-11],[-3,18],[5,9]],[[447,8527],[-4,-19],[-2,16],[6,3]],[[436,6781],[6,-7],[-1,-16],[-5,1],[0,22]],[[358,6745],[2,-22],[-5,-10],[-1,23],[4,9]],[[352,6718],[-8,-21],[-2,14],[3,19],[7,-12]],[[335,7902],[6,7],[2,-14],[5,3],[6,-12],[1,-54],[-3,-18],[-7,-11],[-2,-18],[-11,20],[-5,-1],[-10,28],[-4,0],[-6,15],[-3,25],[4,7],[10,-7],[5,20],[5,2],[3,14],[4,-6]],[[334,6690],[5,-14],[-10,-36],[1,-6],[12,26],[0,-15],[-5,-17],[-8,-12],[-1,-18],[-8,-18],[-7,-1],[-5,-18],[-9,-16],[-5,17],[9,20],[3,-3],[8,16],[-2,19],[4,20],[6,-9],[1,12],[-7,4],[-4,14],[4,23],[11,13],[2,-26],[5,25]],[[266,6527],[10,37],[1,16],[4,17],[7,9],[3,-10],[1,-25],[-12,-27],[-6,-40],[-6,-13],[-2,36]],[[238,6477],[2,-19],[-8,-1],[-1,13],[7,7]],[[227,7303],[-4,-18],[-1,18],[5,0]],[[212,6440],[2,-18],[-5,-13],[-1,19],[4,12]],[[182,8542],[22,-28],[13,24],[6,-2],[5,-14],[2,-23],[11,-12],[4,-12],[15,-5],[8,-8],[-4,-28],[-7,6],[-8,-5],[-4,-13],[-4,-28],[-5,26],[-6,18],[-6,2],[-3,20],[-15,25],[-6,1],[-11,-22],[-7,11],[-4,23],[4,44]],[[162,6381],[0,-22],[-5,-4],[1,19],[4,7]],[[128,6335],[4,-8],[10,1],[1,-7],[-13,-9],[-2,23]],[[108,6360],[0,19],[4,7],[6,-19],[-2,-17],[-4,1],[1,-20],[-5,-2],[-12,-21],[-6,6],[2,15],[7,-2],[9,33]],[[47,6279],[5,3],[0,-24],[-6,3],[-8,-28],[-4,37],[4,1],[0,29],[5,1],[0,-21],[4,-1]],[[28,6296],[3,-9],[-2,-32],[-5,-10],[0,20],[4,31]],[[0,6291],[5,-1],[4,-23],[-4,-27],[-5,51]],[[9993,6496],[6,-13],[0,-19],[-11,-12],[-8,31],[0,15],[13,-2]],[[1966,3444],[-1,-1081]],[[1965,2363],[-57,0],[-34,71],[-73,150],[3,43]],[[1804,2627],[6,8],[1,16],[-1,36],[-4,1],[-2,71],[6,27],[0,28],[-1,45],[4,34],[4,12],[4,25],[-6,27],[-4,51],[-5,31],[0,24]],[[1806,3063],[2,26],[0,36],[-3,36],[-2,112],[11,7],[3,-23],[3,1],[3,33],[0,153]],[[1823,3444],[101,2],[42,-2]],[[2515,3253],[-1,-35],[-4,-11],[-1,-29],[-5,-31],[0,-46],[-3,-34],[-3,-5]],[[2498,3062],[2,-17],[-4,-14],[-2,-33],[-3,-8],[0,-38],[-5,-10],[0,-13],[-6,-31],[2,-21],[-5,-30],[-5,-59],[5,-25],[-2,-16],[1,-39],[-2,-26]],[[2474,2682],[-69,3],[-13,0]],[[2392,2685],[0,101],[-4,8],[-5,-9],[-3,18]],[[2380,2803],[1,335],[-5,211]],[[2376,3349],[4,0],[123,-1],[2,-36],[-4,-23],[-4,-36],[18,0]],[[1654,4398],[0,-331],[0,-241],[36,-171],[35,-169],[27,-137],[20,-101],[34,-185]],[[1804,2627],[-38,-18],[-30,-16],[-4,25],[0,40],[-2,47],[-4,33],[-9,46],[-12,43],[-2,-12],[-4,8],[1,18],[-5,39],[-7,-8],[-12,28],[-2,23],[-8,28],[-9,-1],[-7,13],[-10,-6],[-5,26],[1,53],[-1,8],[1,38],[-8,28],[0,39],[-3,2],[-4,33],[-4,8],[-1,20],[-11,79],[-5,23],[-1,61],[2,-5],[2,37],[-4,33],[-5,-4],[-7,30],[-2,24],[0,23],[-3,31],[0,50],[5,0],[-2,70],[-2,-7],[-1,-35],[-5,-7],[-7,26],[-1,45],[-4,35],[-6,22],[-3,25],[-9,50],[2,14],[-4,64],[2,35],[-3,54],[-7,52],[-7,29],[-2,35],[7,83],[2,29],[-2,22],[3,57],[-2,52],[-3,13],[1,42]],[[1534,4399],[28,1],[24,1],[38,-3],[30,0]],[[2107,4208],[57,0],[0,-191]],[[2164,4017],[1,-574]],[[2165,3443],[-28,1]],[[2137,3444],[-38,-1],[-72,0],[-15,1],[-46,0]],[[1966,3444],[0,223],[-1,21],[0,162],[0,357]],[[1965,4207],[32,1],[63,-1],[47,1]],[[3025,4400],[0,-113],[-2,-18]],[[3023,4269],[-2,3],[-12,-14],[-15,4],[-7,-26],[-7,-9],[-8,-22]],[[2972,4205],[-2,22],[7,21],[-2,16],[2,144]],[[2977,4408],[12,-2],[36,-3],[0,-3]],[[2922,3980],[-2,-23]],[[2920,3957],[-3,-13],[0,-30],[5,-29],[1,-47],[6,-49],[3,-2],[1,-66]],[[2933,3721],[-19,2],[-2,241]],[[2912,3964],[5,21],[5,-5]],[[2876,3786],[-2,27]],[[2874,3813],[2,12],[4,-19],[-4,-20]],[[2649,2300],[4,-55],[39,-13],[37,-14],[1,-41],[4,1],[1,39],[-1,35],[2,15],[7,-16],[8,-7]],[[2751,2244],[1,-83],[4,-93],[8,-122],[13,-131],[-2,-9],[1,-61],[5,-68],[8,-137],[2,-42],[0,-44],[-3,-158],[-3,-3],[-3,-49],[1,-16],[-5,-36],[-2,9],[-6,-15],[-9,-8],[-2,20],[1,29],[-7,85],[-5,15],[-4,-11],[-3,47],[-1,38],[-6,43],[-2,28],[1,41],[-3,8],[1,-24],[-3,-7],[-9,104],[-4,26],[9,76],[-6,-4],[-4,-24],[-3,38],[5,104],[1,87],[-4,21],[-1,28],[-5,6],[-7,46],[-5,19],[0,28],[-4,11],[-3,31],[-11,42],[-9,-10],[0,-29],[-3,5],[-12,-35],[-12,-9],[0,21],[-3,25],[-15,57],[-10,24],[-10,6],[-8,-4],[-17,-18]],[[2703,3063],[-6,-41],[0,-20],[9,-40],[3,3],[5,-42],[1,-22],[4,-40],[7,-24],[3,-35],[8,-33],[0,-22],[5,-35],[7,-29],[2,-32],[1,-40],[3,-14],[5,-51],[0,-33],[7,-16]],[[2767,2497],[-7,-65],[-2,-34],[-3,-29],[0,-30],[-3,-14],[-1,-81]],[[2632,3060],[37,1]],[[2669,3061],[20,-1],[14,3]],[[640,0],[-7,17],[-1,16],[1,43],[-5,73],[4,24],[2,34],[-2,22],[1,23],[8,-27],[9,-20],[5,-29],[0,-26],[8,-40],[-5,-34],[-8,-15],[-7,-25],[-3,-36]],[[613,397],[3,-26],[4,11],[9,-30],[-1,-27],[-9,-14],[-2,6],[-1,33],[-5,7],[-1,19],[3,21]],[[602,432],[-3,-20],[-7,0],[2,22],[8,-2]],[[574,525],[3,-45],[-2,-26],[-6,-5],[-4,54],[4,1],[5,21]],[[531,626],[3,-2],[2,-20],[-1,-28],[-4,-18],[-9,22],[1,31],[8,15]],[[1908,4871],[0,-472]],[[1908,4399],[-31,-1],[-54,0]],[[1823,4398],[-85,1]],[[1738,4399],[0,349],[4,62],[-2,16],[-6,3],[-2,26],[6,68],[3,6],[3,29],[-1,17],[4,23],[1,34],[6,56],[-2,26],[-7,14],[-4,32]],[[1741,5160],[0,34],[-3,33],[0,16],[0,255],[0,236]],[[1738,5734],[28,0]],[[1766,5734],[0,-195],[9,-54],[1,-52],[5,-23],[6,-8],[0,-14],[11,-51],[1,-21],[8,-20],[0,-12],[8,1],[-4,-71],[-1,-45],[3,-29],[-5,-21],[2,-20],[-1,-21],[6,-20],[7,26],[3,21],[5,-19],[-1,-15],[3,-37],[5,-39],[3,-13],[0,-37],[3,-16],[6,-2],[4,-61],[3,-11],[3,18],[9,-1],[7,17],[3,-10],[7,9],[2,-11],[5,8],[7,39],[4,-33],[5,-20]],[[2489,4496],[53,-3],[28,0]],[[2570,4493],[-1,-37],[4,-43],[5,-70]],[[2578,4343],[0,-450],[-3,-35],[3,-40],[1,-34],[-4,-27],[-1,-25],[-5,-41],[-3,-3],[0,-24],[-2,-9],[-1,-45],[0,-13]],[[2563,3597],[-3,-27],[2,-34],[-11,-17],[-1,-20],[2,-25],[-3,-16],[-11,29],[-3,-2],[-4,-33],[1,-11]],[[2532,3441],[-5,2],[-6,55],[2,12],[-2,37],[0,29],[-9,41],[-3,-4],[-3,25],[-9,38],[0,31],[5,49],[-1,18],[3,23],[-4,13],[-6,9],[-3,-18],[-3,11],[-1,63],[-10,41],[-9,49],[-3,58],[-1,39],[3,27]],[[2467,4089],[0,35],[8,21],[1,29],[4,19],[0,33],[-4,27],[2,34],[11,9],[9,24],[0,29],[4,13],[1,37],[0,24],[-7,18],[-1,20],[-6,35]],[[2655,4340],[0,-228],[0,-266]],[[2655,3846],[-2,-9],[2,-52],[-5,-1],[-5,-18],[-8,9],[1,-38],[-5,-16],[-2,-24],[-5,-9],[-3,-48],[-3,-13],[-6,18],[-1,22],[-7,-24],[1,-21],[-7,-7],[-1,19],[-8,-19],[-2,-20],[-7,28],[-4,-6],[-2,13],[-3,-13],[-7,-2],[-3,-18]],[[2578,4343],[3,-12],[8,0],[9,22]],[[2598,4353],[23,0],[34,0],[0,-13]],[[2473,4685],[0,-28],[4,-19],[-3,-23],[1,-43],[2,-30],[10,-22],[2,-24]],[[2467,4089],[-3,7],[-6,38],[-3,-1],[-40,-5],[-39,-2],[-33,3]],[[2343,4129],[-3,25],[2,49],[-3,43],[0,48],[-5,17],[-1,26],[2,23],[-2,33],[-4,13],[-5,86]],[[2324,4492],[-5,41],[2,29],[1,37],[2,14],[-3,19],[1,33],[-2,16],[4,4]],[[2324,4685],[144,0],[5,0]],[[2356,4017],[3,-18],[9,-14],[-6,-56],[4,-18],[4,-45],[6,-10],[0,-412]],[[2376,3444],[-156,0],[-55,-1]],[[2164,4017],[5,0],[187,0]],[[2718,3716],[-1,-57],[4,-37],[4,-28],[2,-22],[5,-22],[4,-3]],[[2736,3547],[-11,-51],[-11,-29],[0,-14],[-4,-13],[0,-16],[-6,-8],[-1,-21],[-16,-27]],[[2687,3368],[0,-3],[-24,2],[-22,6],[-5,-2],[-32,8],[-36,-5],[-6,9],[1,-35],[-36,2],[-3,-2]],[[2524,3348],[1,24],[5,-8],[2,77]],[[2655,3846],[11,0],[5,-40],[1,-17],[9,-7],[6,-26],[5,13],[10,-14],[4,19],[4,6],[1,-32],[3,-6],[4,-26]],[[2474,2682],[3,-22],[-2,-9],[-1,-38],[5,-24],[0,-57],[-3,-44],[-7,-27],[-2,-43],[-2,4],[-1,-70],[-3,-2],[2,-37],[-2,-14],[54,0],[-3,-63],[4,-41],[1,-32],[4,-20]],[[2521,2143],[-9,-26],[0,-19],[7,-12],[3,30],[6,-30],[-1,-24],[-3,-11],[-7,10],[1,-18],[-2,-27],[5,-24],[9,-7],[3,-29],[3,-4],[-5,-32],[-5,6],[-4,33],[-10,18],[0,33],[-6,-11],[1,-27],[-3,-25],[-3,-4],[-3,28],[-7,1],[-2,-29],[-4,-9],[-5,18],[-4,2],[-3,47],[-7,21],[-2,-3],[-3,40],[-7,-5],[0,24],[-8,-23],[1,-18],[-5,-17],[-9,8],[-10,27],[-7,11],[-16,-9],[-2,-8]],[[2398,2049],[-2,19],[6,68],[-2,37],[2,20],[-1,26],[3,19],[3,50],[0,40],[-8,78],[0,41],[-7,42],[0,196]],[[3046,5029],[12,26],[-2,13],[5,30],[4,13],[-1,12],[5,18],[-1,33],[2,50],[5,17],[1,53],[22,147],[6,-7],[0,-35],[4,-13],[9,21],[6,0],[4,14],[8,-31],[4,-25],[1,-214],[-1,-51],[10,-14],[-2,-22],[3,-21],[-2,-18],[4,-30],[5,7],[5,-68],[-6,-31],[-3,12],[-3,-21],[-4,5],[0,-18],[-6,2],[-8,-40],[-2,28],[-3,2],[1,-30],[-6,-15],[-2,24],[-3,-12],[-7,0],[0,28],[-5,-6],[1,-20],[-4,-42],[1,-12],[-6,-23],[-5,9],[-3,-24],[-4,-3],[-4,-20],[-4,4],[-1,21],[-7,-34],[2,-21],[-5,-7],[0,-18],[-5,-22],[-5,-50]],[[3056,4600],[-3,14],[0,19],[-4,22],[-2,250],[-1,124]],[[2904,3626],[2,0],[-1,0],[-1,0]],[[2933,3721],[-6,-80]],[[2927,3641],[-4,-3],[-8,-12]],[[2915,3626],[-6,-8],[0,31],[-2,13],[3,13],[-4,32],[-2,-14],[-6,3],[-2,35],[2,0],[0,45],[2,18],[-2,60],[3,36],[5,6],[0,37],[-3,-5],[0,-18],[-8,-25],[-2,-21],[0,-56],[-3,-26],[1,-44],[4,-30],[-1,-23],[3,-23],[-2,-16],[-6,30],[-10,15],[-2,29],[-6,-16],[-2,23],[5,29]],[[2874,3756],[2,30]],[[2874,3813],[-4,18],[-6,10],[0,28],[-3,15],[-4,4]],[[2857,3888],[-4,53],[-4,0],[-5,18],[-3,-15],[-5,1],[-1,-21],[-8,14],[-6,-28],[-3,6],[-6,-33],[-6,-17],[1,98]],[[2807,3964],[105,0]],[[3053,4565],[1,-34],[-1,-27],[-5,-25],[0,-29],[6,-4],[4,-31],[0,-24],[3,-6],[0,-22],[8,-19],[9,18],[-2,-26],[-13,-23],[-5,-1],[-3,18],[-5,-6],[0,-13],[-5,-9]],[[3045,4302],[-3,35]],[[3042,4337],[0,6]],[[3042,4343],[-3,14],[-2,45],[-4,0],[-8,-2]],[[2977,4408],[0,7],[6,126]],[[2983,4541],[23,-3]],[[3006,4538],[34,-7],[3,18],[7,19],[3,-3]],[[2598,4353],[5,25],[4,43],[4,26],[3,36],[1,52],[0,57],[-9,111],[3,42],[-2,50],[6,51],[2,43],[-1,23],[5,9],[0,31],[8,9],[5,34],[0,-69],[3,-3],[3,35],[1,58],[2,15],[8,9],[-3,41],[5,35],[7,2],[7,-22],[7,-3],[3,-28],[6,-2],[9,-25],[3,1],[4,-41],[-3,-21],[3,-29],[2,-32],[-2,-71],[-6,-18],[-1,-37],[-7,-12],[-4,-44],[2,-17],[6,-15],[6,24],[6,49],[10,19],[5,-15],[3,-27],[3,-80],[0,-39],[3,-48],[-3,-69],[-4,-11],[-1,25],[-3,-7],[-3,-58],[-6,-21],[-2,-44],[-7,-37],[0,-16]],[[2694,4347],[-39,-7]],[[2635,5110],[1,-23],[-4,-4],[1,33],[2,-6]],[[2496,5270],[11,20],[5,23],[12,9],[8,29],[4,1],[3,20],[9,28],[4,24],[7,15],[6,-13],[-11,-59],[-2,-19],[0,-36],[5,27],[10,-4],[8,-19],[7,-52],[3,-10],[7,9],[2,-12],[7,-6],[16,44],[8,4],[10,-2],[7,15],[6,1],[1,-54],[5,-7],[6,8],[2,-12],[4,16],[8,5],[1,-67],[3,-28],[6,-8],[1,19],[5,0],[3,-20],[-3,-14],[-15,12],[-8,-8],[-8,23],[-2,-21],[1,-18],[-4,4],[-5,27],[-9,15],[-5,1],[-4,-25],[-8,-6],[-8,5],[-3,-10],[-1,-21],[-9,-18],[1,25],[-4,5],[-2,-26],[-6,-1],[-3,-11],[-5,-45],[-8,-58],[1,-5]],[[2576,4989],[-4,20],[2,27],[-7,4],[3,26],[0,34],[-5,23],[-4,24],[-12,19],[-4,-7],[-12,29],[-29,38],[-3,33],[-5,11]],[[2541,5539],[-7,-24],[-4,-3],[1,19],[18,45],[-4,-31],[-4,-6]],[[2324,4685],[0,343],[-7,22],[-5,36],[8,41],[1,22]],[[2321,5149],[-1,76],[-4,20],[-2,42],[0,51],[-1,8],[-1,123],[-5,65],[-3,36],[0,77],[1,27],[-3,60]],[[2302,5734],[59,0],[0,73],[5,-2],[4,-14],[4,-100],[3,-11],[9,-3],[1,-10],[11,-4],[1,-21],[10,5],[0,9],[7,10],[6,-4],[8,-16],[2,-19],[4,2],[4,-43],[2,18],[7,8],[1,-18],[9,-12],[0,-17],[4,-14],[8,8],[5,18],[8,12],[2,-28],[5,6],[6,-6],[6,4],[8,-24],[7,4],[0,-10],[-10,-24],[-13,-19],[-9,-20],[-12,-49],[-5,-31],[-8,-34],[-13,-46],[2,-16]],[[2450,5296],[-2,9],[-6,-16],[0,-113],[-2,-11],[-8,-16],[-6,-41],[-1,-27],[3,-2],[4,-24],[-3,-29],[0,-33],[-2,-70],[8,-34],[6,-3],[3,-21],[8,-21],[2,-25],[8,-33],[5,-7],[5,-42],[-1,-30],[2,-22]],[[2553,2179],[-3,-8],[-7,4],[-3,12],[-7,-8],[-9,-22],[-3,-14]],[[2498,3062],[53,0],[7,0]],[[2524,3348],[-2,0],[-2,0],[1,-47],[-6,-48]],[[2376,3349],[0,95]],[[2356,4017],[-7,50],[-6,62]],[[2108,5151],[0,-181],[-1,0]],[[2107,4970],[-53,1],[-90,0],[-56,0],[0,-100]],[[1766,5734],[130,-1],[58,1],[154,0]],[[2108,5734],[0,-217],[0,-366]],[[2107,4208],[0,382]],[[2107,4590],[21,0],[49,-1],[88,0],[1,-10],[15,-34],[4,19],[4,-4],[13,0],[15,-36],[2,-27],[5,-5]],[[1823,4398],[0,-954]],[[1654,4398],[37,-1],[47,2]],[[3006,4538],[-2,14],[0,28],[3,11],[-1,27],[3,81],[5,37],[2,43],[3,16],[-1,47],[10,17],[5,33],[-3,31],[4,32],[0,18]],[[3034,4973],[4,49],[6,-5],[2,12]],[[3056,4600],[-3,-35]],[[2962,4152],[-5,-13],[-2,-29],[8,-14],[0,-22],[-3,-103],[-9,-76],[-6,-22],[-5,-48],[-3,31],[-8,16],[-10,42],[-1,28],[0,4],[2,11]],[[2922,3980],[8,15],[0,15],[9,31],[2,17],[-9,39],[0,24],[-3,6],[-1,22],[5,33],[-3,20],[7,40],[2,21],[4,13]],[[2943,4276],[13,-41],[9,-28],[-3,-55]],[[2137,3444],[0,-95]],[[2137,3349],[-1,0],[0,-474],[0,-193],[0,-192],[-101,0],[-1,-18],[3,-22]],[[2037,2450],[-48,0],[0,-87],[-24,0]],[[2972,4205],[13,-15],[2,11],[10,0],[6,6],[8,31],[1,-22],[5,-10],[-11,-28],[-22,-42],[-9,-8],[-6,2],[-5,-9],[-2,31]],[[2943,4276],[-2,14],[-4,1],[-5,32],[1,29],[-4,22],[-2,-2],[-3,27],[-125,0],[0,48],[0,3]],[[2799,4450],[17,54],[3,26],[5,18],[-2,32],[-2,7],[-2,52],[17,22],[15,-1],[6,-5],[6,-21],[4,8],[12,-1],[8,14],[8,34],[5,1],[0,52],[3,31],[-7,21],[2,24],[11,32],[4,28],[14,64],[13,32],[19,-5],[23,4]],[[2981,4973],[1,-39],[-2,-36],[3,-34],[-1,-37],[-3,-39],[2,-52],[-1,-16],[4,-31],[-1,-132],[0,-16]],[[2909,3359],[4,-77],[-8,8],[-1,-10],[-10,-11],[-1,-11],[-7,-3],[0,-13],[8,9],[1,-8],[9,9],[3,-18],[5,8],[2,-46],[-2,-22],[-3,-2],[-8,-47],[-9,-2],[-2,-33],[4,-32],[4,-6],[-6,-54],[-6,7],[-9,-6],[-6,-11],[-10,-37],[-7,-48],[-4,-60],[-6,13],[-11,-12]],[[2833,2844],[-32,181],[-32,4],[1,21],[-5,33],[-3,-12],[0,20],[-35,10],[-8,-8],[-6,-17],[-10,-13]],[[2669,3061],[1,45],[5,4],[3,31],[7,29],[7,1],[7,29],[8,10],[6,43],[4,13],[1,-19],[11,37],[5,-8],[4,36],[5,9],[1,45]],[[2744,3366],[20,-5],[19,-3],[23,-1],[103,2]],[[2321,5149],[-213,2]],[[2108,5734],[194,0]],[[2777,4138],[-4,-10],[2,-21],[0,-29],[-4,-46],[-3,-70],[-11,-62],[-3,-8],[-4,12],[-3,-27],[-3,1],[-4,-36],[1,-22],[-3,-18],[-4,29],[-5,-46],[1,-29],[-3,-11],[-1,-25],[-8,-4]],[[2694,4347],[11,-26],[3,-15],[3,14],[6,-30],[4,-9],[14,25],[7,-6],[9,36],[12,34],[14,24]],[[2777,4394],[0,-256]],[[2380,2803],[-11,21],[-3,22],[-7,18],[-2,-16],[-8,1],[-1,10],[-7,-19],[-3,11],[-6,-10],[-5,-29],[-2,17],[-6,14],[-7,0],[-2,21],[-7,-42],[-2,24],[-3,-8],[-3,16],[-7,15],[-5,-25],[-2,26],[-4,3],[-2,21],[-6,8],[-3,-18],[-3,16],[-5,-2],[-6,17],[-6,-2],[-2,36],[-9,2],[-4,-6],[-6,37],[-2,-3],[0,370],[-52,0],[-34,0]],[[1534,4399],[-4,22],[-2,61],[0,43],[-4,33],[3,32],[2,51],[4,54],[2,48],[3,162],[0,22],[3,71],[1,99],[-2,54],[1,32],[12,29]],[[1553,5212],[5,-22],[4,5],[3,2],[6,-20],[3,-23],[1,-57],[15,-21],[12,30],[8,3],[9,-10],[1,-13],[16,27],[3,-9],[9,5],[7,19],[12,17],[12,4],[4,12],[58,-1]],[[2807,3964],[-30,0],[0,174]],[[2777,4394],[5,11],[17,45]],[[3045,4302],[-6,-4],[3,39]],[[3042,4343],[-4,3],[-3,-28],[-1,-40],[-11,-9]],[[2833,2844],[-5,-10],[-6,-31],[-6,-49],[-1,-40],[-5,-31],[-6,0],[-2,-23],[-6,-25],[-4,-28],[-6,-11],[-6,-29],[-1,-14],[-6,-16],[-6,-40]],[[2107,4590],[0,380]],[[2687,3368],[57,-2]],[[2398,2049],[-5,-1],[-14,-26],[-6,15],[-1,31],[-3,-22],[-3,5],[-1,-27],[3,-11],[0,-36],[-5,-37],[-9,-47],[-17,-51],[-2,9],[-5,-13],[0,12],[-7,-9],[-3,24],[-2,-5],[7,-49],[-5,-16],[-5,10],[-1,-35],[-7,-35],[-6,-66],[-4,-69],[-3,5],[-1,-25],[3,6],[-2,-50],[-2,-2],[0,-28],[3,-16],[1,-57],[3,-20],[0,-37],[3,-32],[-9,-20],[-3,25],[-7,10],[-9,-3],[-8,32],[-5,3],[-5,25],[-6,8],[-4,24],[-2,58],[-5,34],[0,30],[-2,31],[1,27],[-4,30],[-3,4],[-5,27],[-1,34],[-5,32],[-6,26],[-3,57],[-2,16],[-4,46],[-1,38],[-4,27],[-6,24],[-1,16],[-6,15],[-4,42],[-13,9],[-7,-2],[-7,15],[-1,-20],[-7,-6],[-5,-40],[-3,-64],[-2,-1],[-4,-37],[-5,-1],[-7,29],[-17,47],[-4,25],[-6,24],[-5,54],[-1,49],[-4,40],[-2,35],[-3,22],[-11,32],[-6,44],[-4,15],[-6,38],[-7,20],[-5,50],[-4,11]],[[1908,4399],[0,-192],[57,0]],[[2981,4973],[30,-2],[23,2]],[[2927,3641],[-4,-32],[-3,-12],[-3,-44],[-6,-71],[-5,-15],[-1,27],[2,58],[8,74]],[[2874,3756],[-4,-8],[-2,-28],[1,-19],[8,6],[1,-31],[10,-12],[3,-24],[8,-26],[-4,-54],[4,-41],[-4,-20],[-1,-24],[4,-15],[-4,-23],[-6,30],[-1,-10],[5,-22],[14,-5],[3,-71]],[[2736,3547],[-1,-16],[4,-32],[5,-16],[4,1],[5,25],[4,-20],[7,11],[13,36],[1,-11],[5,17],[0,34],[4,30],[5,29],[2,34],[6,36],[2,44],[5,-27],[4,-8],[3,16],[6,68],[4,-17],[13,77],[2,57],[15,-64],[3,37]],[[1553,5212],[-5,7],[-4,-12],[-6,17],[1,26],[4,14],[-6,40],[-4,103],[-2,14],[-3,73],[-6,28],[-2,56],[3,38],[6,-18],[11,-24],[8,1],[8,-9],[8,9],[3,-16],[7,1],[5,-42],[3,3],[1,-56],[2,-52],[3,6],[-3,43],[1,43],[4,44],[-3,18],[-1,31],[-3,35],[2,25],[-2,29],[-5,4],[-4,22],[1,21],[163,0]],[[1576,5602],[4,9],[0,-39],[-5,15],[1,15]],[[1568,5655],[3,25],[4,-30],[-1,-27],[-7,8],[1,24]],[[2576,4989],[-1,-23],[-6,-4],[-4,-44],[-2,-30],[3,-6],[5,20],[4,38],[6,15],[5,48],[6,10],[-1,-25],[-4,-23],[-8,-79],[-2,-44],[0,-32],[-3,-10],[-2,-43],[1,-37],[-3,-24],[-3,-59],[0,-47],[4,-42],[-1,-55]],[[2450,5296],[6,-2],[20,33],[8,17],[2,-13],[-4,-25],[9,-33],[5,-3]]]}\"}]}]}" );
+        app.bootstrap('project_type', "presentation" );
+        app.bootstrap('project_version', "40" );
+        app.bootstrap('visibility', " " );
+        app.bootstrap('customHeader', false );
+        app.bootstrap('editMode', "publish" );
+        app.bootstrap('session_id', "test" );
+        app.bootstrap('mode', "player" );
+        app.bootstrap('usersDataStorage', "images\/user\/" );
+        app.bootstrap('assetsStorage', "images\/" );
+        app.bootstrap('audioStorage', "https:\/\/s3.amazonaws.com\/vismestatic\/" );
+        app.bootstrap('permissions', ["sadface","editor:removeUpgrade","download:png","download:pdf","download:html","editor:publishRemoveBranding","publish:requiresRegistration","publish:customBackground","publish:socialShare","publish:comments","publish:password","asset:premiumSvgs","asset:premiumInfographics","asset:premiumTemplates","player:watermarkRemoveBranding","editor:removeUpgrade","asset:premiumAudio","editor:palettes","player:dynamicFields","brand:templates","brand:links","brand:colors","brand:fonts","brand:logos","download:hres","editor:slideLibrary","editor:slideMaster","asset:premiumTemplateSlides"] );
+        app.bootstrap('livereload', 0 );
+        app.bootstrap('Html5Download', true );
+        app.bootstrap('logo', "" );
+  $(function() {
+  app.init();
+});
+</script>
+  </body>
+</html>
